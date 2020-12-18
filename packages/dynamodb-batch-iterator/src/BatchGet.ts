@@ -100,9 +100,9 @@ export class BatchGet extends BatchOperation<AttributeMap> {
 
         return {
             ...super.getInitialTableState(tableName),
-            attributeNames: ExpressionAttributeNames,
-            projection: ProjectionExpression,
-            consistentRead: ConsistentRead
+            attributeNames: ExpressionAttributeNames as any,
+            projection: ProjectionExpression as string,
+            consistentRead: ConsistentRead as boolean
         };
     }
 }

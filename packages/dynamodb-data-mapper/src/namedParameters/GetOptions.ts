@@ -1,6 +1,6 @@
 import { ReadConsistencyConfiguration } from './ReadConsistencyConfiguration';
 import { StringToAnyObjectMap } from '../constants';
-import { ProjectionExpression } from "@aws/dynamodb-expressions";
+import { ProjectionExpression } from "@invisit/dynamodb-expressions";
 
 export interface GetOptions extends ReadConsistencyConfiguration {
     /**

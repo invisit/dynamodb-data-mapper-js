@@ -1,5 +1,5 @@
 {
-  "name": "@aws/dynamodb-data-mapper",
+  "name": "@invisit/dynamodb-data-mapper",
   "version": "0.7.3",
   "description": "A schema-based data mapper for Amazon DynamoDB",
   "keywords": [
@@ -8,10 +8,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awslabs/dynamodb-data-mapper-js.git"
+    "url": "git+https://github.com/invisit/dynamodb-data-mapper-js.git"
   },
   "bugs": {
-    "url": "https://github.com/awslabs/dynamodb-data-mapper-js/issues"
+    "url": "https://github.com/invisit/dynamodb-data-mapper-js/issues"
   },
   "homepage": "https://awslabs.github.io/dynamodb-data-mapper-js/packages/dynamodb-data-mapper/",
   "main": "./build/index.js",
@@ -38,11 +38,11 @@
     "typescript": "^3.4"
   },
   "dependencies": {
-    "@aws/dynamodb-auto-marshaller": "^0.7.1",
-    "@aws/dynamodb-batch-iterator": "^0.7.1",
-    "@aws/dynamodb-data-marshaller": "^0.7.3",
-    "@aws/dynamodb-expressions": "^0.7.3",
-    "@aws/dynamodb-query-iterator": "^0.7.1",
+    "@invisit/dynamodb-auto-marshaller": "^0.7.3",
+    "@invisit/dynamodb-batch-iterator": "^0.7.3",
+    "@invisit/dynamodb-data-marshaller": "^0.7.3",
+    "@invisit/dynamodb-expressions": "^0.7.3",
+    "@invisit/dynamodb-query-iterator": "^0.7.3",
     "tslib": "^1.9"
   },
   "peerDependencies": {

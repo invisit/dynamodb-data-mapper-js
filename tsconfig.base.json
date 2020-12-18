@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es2015.iterable",
+      "es2015.promise",
+      "es2015.collection",
+      "es2015.symbol.wellknown",
+      "esnext.asynciterable"
+    ],
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    
+    "baseUrl": "./",
+    "paths": {
+      "@invisit/dynamodb-auto-marshaller": [
+        "./packages/dynamodb-auto-marshaller/src"
+      ],
+      "@invisit/dynamodb-auto-marshaller/*": [
+        "./packages/dynamodb-auto-marshaller/src/*"
+      ],
+      "@invisit/dynamodb-batch-iterator": [
+        "./packages/dynamodb-batch-iterator/src"
+      ],
+      "@invisit/dynamodb-batch-iterator/*": [
+        "./packages/dynamodb-batch-iterator/src/*"
+      ],
+      "@invisit/dynamodb-data-mapper": [
+        "./packages/dynamodb-data-mapper/src"
+      ],
+      "@invisit/dynamodb-data-mapper/*": [
+        "./packages/dynamodb-data-mapper/src/*"
+      ],
+      "@invisit/dynamodb-data-mapper-annotations": [
+        "./packages/dynamodb-data-mapper-annotations/src"
+      ],
+      "@invisit/dynamodb-data-mapper-annotations/*": [
+        "./packages/dynamodb-data-mapper-annotations/src/*"
+      ],
+      "@invisit/dynamodb-data-marshaller": [
+        "./packages/dynamodb-data-marshaller/src"
+      ],
+      "@invisit/dynamodb-data-marshaller/*": [
+        "./packages/dynamodb-data-marshaller/src/*"
+      ],
+      "@invisit/dynamodb-expressions": [
+        "./packages/dynamodb-expressions/src"
+      ],
+      "@invisit/dynamodb-expressions/*": [
+        "./packages/dynamodb-expressions/src/*"
+      ],
+      "@invisit/dynamodb-query-iterator": [
+        "./packages/dynamodb-query-iterator/src"
+      ],"@invisit/dynamodb-query-iterator/*": [
+        "./packages/dynamodb-query-iterator/src/*"
+      ]
+    }
+  }
+}

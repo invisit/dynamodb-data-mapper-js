@@ -1,10 +1,10 @@
 import { getSchema } from './protocols';
-import { DynamoDbPaginatorInterface } from '@aws/dynamodb-query-iterator';
+import { DynamoDbPaginatorInterface } from '@invisit/dynamodb-query-iterator';
 import {
     Schema,
     unmarshallItem,
     ZeroArgumentsConstructor,
-} from '@aws/dynamodb-data-marshaller';
+} from '@invisit/dynamodb-data-marshaller';
 import { ConsumedCapacity } from 'aws-sdk/clients/dynamodb';
 
 require('./asyncIteratorSymbolPolyfill');
@@ -91,7 +91,7 @@ export abstract class Paginator<T> implements AsyncIterableIterator<Array<T>> {
                 );
 
                 return {
-                    value: (value.Items || []).map(item => unmarshallItem(
+                    value: (value.Items || []).map((item:any) => unmarshallItem(
                         this.itemSchema,
                         item,
                         this.valueConstructor

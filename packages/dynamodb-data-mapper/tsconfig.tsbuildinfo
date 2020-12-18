@@ -1,0 +1,3140 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "signature": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "signature": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "signature": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "signature": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "signature": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "signature": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "signature": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "signature": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "signature": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "signature": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "signature": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "d0db416bccdb33975548baf09a42ee8c47eace1aac7907351a000f1e568e7232",
+        "signature": "d0db416bccdb33975548baf09a42ee8c47eace1aac7907351a000f1e568e7232",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "signature": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "signature": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "signature": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "signature": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/tslib/tslib.d.ts": {
+        "version": "4576b4e61049f5ffd7c9e935cf88832e089265bdb15ffc35077310042cbbbeea",
+        "signature": "4576b4e61049f5ffd7c9e935cf88832e089265bdb15ffc35077310042cbbbeea",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/KeySchema.d.ts": {
+        "version": "9e8a48900c66e0c3d60f17f5a9c6f9090729e831be3d55d5a339da732b560a06",
+        "signature": "9e8a48900c66e0c3d60f17f5a9c6f9090729e831be3d55d5a339da732b560a06",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/Schema.d.ts": {
+        "version": "f10a3308ef9beddb72b741b54d17ff301dea0114a6e85ec97c513c07feac46ee",
+        "signature": "f10a3308ef9beddb72b741b54d17ff301dea0114a6e85ec97c513c07feac46ee",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-auto-marshaller/build/ObjectSet.d.ts": {
+        "version": "bb4c8f6454a9b62046ba04d224be3bcdf2e13878b46ffd82c108d12d870db313",
+        "signature": "bb4c8f6454a9b62046ba04d224be3bcdf2e13878b46ffd82c108d12d870db313",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-auto-marshaller/build/BinarySet.d.ts": {
+        "version": "0879c142938745e82b09ad84aa9efe1b04de22409f6ed6f6ae49bff4b11f87a4",
+        "signature": "0879c142938745e82b09ad84aa9efe1b04de22409f6ed6f6ae49bff4b11f87a4",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/error.d.ts": {
+        "version": "aee22a16add1c6362d3f37af8f779595330b223ed5dcdd612bc7e5ef473017a4",
+        "signature": "aee22a16add1c6362d3f37af8f779595330b223ed5dcdd612bc7e5ef473017a4",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/credentials.d.ts": {
+        "version": "0ada350a456f9f750c609c3f13a47c22a07dadf69510c164d13d152e681eb03a",
+        "signature": "0ada350a456f9f750c609c3f13a47c22a07dadf69510c164d13d152e681eb03a",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/credentials/credential_provider_chain.d.ts": {
+        "version": "dca94cc98d7175b117cc3cc470487a6d90073a91c5dcfaaf4dc42c8db6e5cdb1",
+        "signature": "dca94cc98d7175b117cc3cc470487a6d90073a91c5dcfaaf4dc42c8db6e5cdb1",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/config-base.d.ts": {
+        "version": "22ea339c8ab2544fd4facaaec87298344f20cbfb988ec2b6cdf293b2bbc5653d",
+        "signature": "22ea339c8ab2544fd4facaaec87298344f20cbfb988ec2b6cdf293b2bbc5653d",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/endpoint.d.ts": {
+        "version": "319d2d6122ea3112618f324e9cf3ac2f3e9a3eac4ef3a3eaaf60c6863783aa41",
+        "signature": "319d2d6122ea3112618f324e9cf3ac2f3e9a3eac4ef3a3eaaf60c6863783aa41",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/service.d.ts": {
+        "version": "eee40625de078409f90c1d9dcd735e58cc45b2e3931e30210aa2c3a7a00e9d05",
+        "signature": "eee40625de078409f90c1d9dcd735e58cc45b2e3931e30210aa2c3a7a00e9d05",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/http_response.d.ts": {
+        "version": "3ef72bda86404981d8145dfdfa2924e367a2aaeb883e7f50abe34c665ae7e5c0",
+        "signature": "3ef72bda86404981d8145dfdfa2924e367a2aaeb883e7f50abe34c665ae7e5c0",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/response.d.ts": {
+        "version": "df0f4d23c236280d5e28397e6ac7b09130ad2c729b09c604865f3f61effd1c92",
+        "signature": "df0f4d23c236280d5e28397e6ac7b09130ad2c729b09c604865f3f61effd1c92",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/http_request.d.ts": {
+        "version": "3620bd96018b6c081228c60ea129312de9e14c007b9a8521c7c97f7fd27e176e",
+        "signature": "3620bd96018b6c081228c60ea129312de9e14c007b9a8521c7c97f7fd27e176e",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/request.d.ts": {
+        "version": "c6efe7c64b9a2e654aa38cf233712b50153019723d0a0b424f620b9cf6d50b02",
+        "signature": "c6efe7c64b9a2e654aa38cf233712b50153019723d0a0b424f620b9cf6d50b02",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/dynamodb/document_client.d.ts": {
+        "version": "3692331e271c67a24db0ab19f5913be9c4b62e9b4e0cbdf58013e63aa465a78b",
+        "signature": "3692331e271c67a24db0ab19f5913be9c4b62e9b4e0cbdf58013e63aa465a78b",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/services/dynamodb.d.ts": {
+        "version": "6076f6537f99cef60fde291607da98310da1b04d520f3c1bd1b8423311fb3807",
+        "signature": "6076f6537f99cef60fde291607da98310da1b04d520f3c1bd1b8423311fb3807",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/lib/dynamodb/converter.d.ts": {
+        "version": "4ccccbb32314f379efaa2dd63c9b98c396685797c20b75254b639e8ee5c74f2a",
+        "signature": "4ccccbb32314f379efaa2dd63c9b98c396685797c20b75254b639e8ee5c74f2a",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/aws-sdk/clients/dynamodb.d.ts": {
+        "version": "403857a2f9711da37c73724cf2eba13216fbcd7f27f51920542cb7a3cc2694f9",
+        "signature": "403857a2f9711da37c73724cf2eba13216fbcd7f27f51920542cb7a3cc2694f9",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-auto-marshaller/build/NumberValue.d.ts": {
+        "version": "152905de61de917d2fc4799ba90eb461e8e8f63aef9f716c6d8a84bce6a6cf39",
+        "signature": "152905de61de917d2fc4799ba90eb461e8e8f63aef9f716c6d8a84bce6a6cf39",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-auto-marshaller/build/NumberValueSet.d.ts": {
+        "version": "0bb4a13ee9ca4342432598f37bcaba0294c74baeb2d1d33c1392452f1a8efa87",
+        "signature": "0bb4a13ee9ca4342432598f37bcaba0294c74baeb2d1d33c1392452f1a8efa87",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-auto-marshaller/build/Marshaller.d.ts": {
+        "version": "6a18b6aa575268d748e10aa44a7419c7ed8a324b17f772d21d4b12e79fb7d123",
+        "signature": "6a18b6aa575268d748e10aa44a7419c7ed8a324b17f772d21d4b12e79fb7d123",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-auto-marshaller/build/index.d.ts": {
+        "version": "3c19af17f670b9b11f7420b1e743d82942305236aaae802f6cec46291c41ec4e",
+        "signature": "3c19af17f670b9b11f7420b1e743d82942305236aaae802f6cec46291c41ec4e",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/SchemaType.d.ts": {
+        "version": "dc50779b70f4556a48f333090c0fcf6552536b5204b53fb6d2c902be3bb97ffa",
+        "signature": "dc50779b70f4556a48f333090c0fcf6552536b5204b53fb6d2c902be3bb97ffa",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/InvalidSchemaError.d.ts": {
+        "version": "52c4838f8ae553aecb505ec57927fd8febf5933f4bd99b52a45f3bf8cb44f1f8",
+        "signature": "52c4838f8ae553aecb505ec57927fd8febf5933f4bd99b52a45f3bf8cb44f1f8",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/InvalidValueError.d.ts": {
+        "version": "50ce996ed8dcbb6c153f09697dac94227d0b266c13fdd71668f8a160fd703a50",
+        "signature": "50ce996ed8dcbb6c153f09697dac94227d0b266c13fdd71668f8a160fd703a50",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/isKey.d.ts": {
+        "version": "60e6c1eab1b0d853cf3634d4652bd512340e4b2b34c6354a760543bc870363e8",
+        "signature": "60e6c1eab1b0d853cf3634d4652bd512340e4b2b34c6354a760543bc870363e8",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/keysFromSchema.d.ts": {
+        "version": "1fce2fe80b31271cd7f5b85eadaf3b6f222ba698fbb3f8cf9b1e8c93bd90382e",
+        "signature": "1fce2fe80b31271cd7f5b85eadaf3b6f222ba698fbb3f8cf9b1e8c93bd90382e",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/AttributePath.d.ts": {
+        "version": "532f4907861e1217b82842087b45a5e2f5921aba4267d7abe40ca0faa81eb46f",
+        "signature": "532f4907861e1217b82842087b45a5e2f5921aba4267d7abe40ca0faa81eb46f",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/AttributeValue.d.ts": {
+        "version": "42463f5578937dbfcd3b55559e569c11fe8b68d44e572470dd180ceb03d68fdf",
+        "signature": "42463f5578937dbfcd3b55559e569c11fe8b68d44e572470dd180ceb03d68fdf",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/ExpressionAttributes.d.ts": {
+        "version": "18b4a8a65bf4c431bcb64b4a618bf0bf3b0e76075f8651ce9f18c2877c1495d1",
+        "signature": "18b4a8a65bf4c431bcb64b4a618bf0bf3b0e76075f8651ce9f18c2877c1495d1",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/AttributeBearingExpression.d.ts": {
+        "version": "3395ea11d56692778b19c173bca7ae9ae42a6398af22791c84a1f3b20696b3ec",
+        "signature": "3395ea11d56692778b19c173bca7ae9ae42a6398af22791c84a1f3b20696b3ec",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/FunctionExpression.d.ts": {
+        "version": "a16049bf6f12f9007d994de4b114289d6802634e6372649202cb8dc25256c6f6",
+        "signature": "a16049bf6f12f9007d994de4b114289d6802634e6372649202cb8dc25256c6f6",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/ConditionExpression.d.ts": {
+        "version": "5f2dbd3b856ee199c2a34d774875dfa75b12c992ce59dfe54732d71037243552",
+        "signature": "5f2dbd3b856ee199c2a34d774875dfa75b12c992ce59dfe54732d71037243552",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/MathematicalExpression.d.ts": {
+        "version": "8ff92022e43bb4467eedbce878c3788b338e2613286f2e9401ffd8d76367eab8",
+        "signature": "8ff92022e43bb4467eedbce878c3788b338e2613286f2e9401ffd8d76367eab8",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/ProjectionExpression.d.ts": {
+        "version": "5b00a809b822577619d52d57a8b6f131c08458702156a33168aecdc1650dea18",
+        "signature": "5b00a809b822577619d52d57a8b6f131c08458702156a33168aecdc1650dea18",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/UpdateExpression.d.ts": {
+        "version": "2b87aea083485ed4b7751c5b82369463bef099dba13495b0d3a8522112cd095d",
+        "signature": "2b87aea083485ed4b7751c5b82369463bef099dba13495b0d3a8522112cd095d",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-expressions/build/index.d.ts": {
+        "version": "2979de1d0f5d2728bac0bba45e50502671a0bd686371347ec45108bec63a4355",
+        "signature": "2979de1d0f5d2728bac0bba45e50502671a0bd686371347ec45108bec63a4355",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/marshallExpression.d.ts": {
+        "version": "ce973212592486584d7f6180bd1ae71ee4acc657177d198a90dd89b4704b571a",
+        "signature": "ce973212592486584d7f6180bd1ae71ee4acc657177d198a90dd89b4704b571a",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/marshallItem.d.ts": {
+        "version": "71d5e564ad9472b5e70e7b14981f8b275bc630b00d90ee7aa2ceac287e877ff2",
+        "signature": "71d5e564ad9472b5e70e7b14981f8b275bc630b00d90ee7aa2ceac287e877ff2",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/marshallKey.d.ts": {
+        "version": "1871635d9227e82e026b6bef94e75b0def4bbecdbc82c79003972f501e5ccaf1",
+        "signature": "1871635d9227e82e026b6bef94e75b0def4bbecdbc82c79003972f501e5ccaf1",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/toSchemaName.d.ts": {
+        "version": "02c0a30d5f4e7fd2f8d0a0588f8168ccdef26f4ffe35678db27dc96b3c36232a",
+        "signature": "02c0a30d5f4e7fd2f8d0a0588f8168ccdef26f4ffe35678db27dc96b3c36232a",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/unmarshallItem.d.ts": {
+        "version": "d30840f968d79545e6fec647cf0d9bf8de73f5478ab8ecad36e5edef41878dc3",
+        "signature": "d30840f968d79545e6fec647cf0d9bf8de73f5478ab8ecad36e5edef41878dc3",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-data-marshaller/build/index.d.ts": {
+        "version": "5e48390bc2a96583ef70919f6135f1cd3a7c2b461b2cabf1f477b272cd09f90f",
+        "signature": "5e48390bc2a96583ef70919f6135f1cd3a7c2b461b2cabf1f477b272cd09f90f",
+        "affectsGlobalScope": false
+      },
+      "./src/BatchState.ts": {
+        "version": "d3f3dd310b7ddde8b8b9a4ba27b05f96b16fc4c9f9b54ebd68a5e2454b0d31d8",
+        "signature": "f4493d00825522b182fabc314dd9a6f9175bdbbbb99948c33af5d9c5385a5198",
+        "affectsGlobalScope": false
+      },
+      "./src/constants.ts": {
+        "version": "98fdcb1dd9b52dd8f1c6b652afe7e26054fd4addae164219c6a4c4e630f53d56",
+        "signature": "f8b9d5262ce935b7f25593c26346bdbf9cd96f1deb9c2542a50359d6656fb16b",
+        "affectsGlobalScope": false
+      },
+      "./src/ItemNotFoundException.ts": {
+        "version": "64dabe9d6bbe1abb58d80b62faec56bbb708fb5e8c15ed8071ab1563810f36bf",
+        "signature": "3db147358fc65f33462e08ba87bf5be76ad4334ecbd049120275fa3c4fb460f9",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/ReadConsistencyConfiguration.ts": {
+        "version": "9e5d7c1d37dd78c50db13fe96cf877cb71543657a60cd6bb9b8f54851b3528e5",
+        "signature": "68387fd2ff37127eb7fedb527db89d59a2b71754609a3bc28f96b20934ab93e4",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/GetOptions.ts": {
+        "version": "f99cc076fd8e9e823050cda0227c3a6f33b4d67cbe8e46106da56e5b08bdc05d",
+        "signature": "1c6e5fccf4f05f236ecf5c2cdaa9a0c61f20a5d44143cdafbb8e1d49169b58b5",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/BatchGetOptions.ts": {
+        "version": "da3b6c3ab8b7d080cf4d08a8a28096df7ed82cb04d0cc2ffd0975e6499331260",
+        "signature": "2ee7f0fd6d93eead670a6686195ba25932191a7a8b5b3932f917ce832f869b15",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/ProvisionedThroughput.ts": {
+        "version": "a89aa08fd5218d87f17114ade2c803cd9fa675abe18f504c0851be30e46e02d9",
+        "signature": "a89aa08fd5218d87f17114ade2c803cd9fa675abe18f504c0851be30e46e02d9",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/SecondaryIndexOptions.ts": {
+        "version": "ec2a7f9bbab8fb3af82b6dd52c134b296512939dd19370ca69a05adeb6bf5c63",
+        "signature": "66c74a2754145817ab503075d5e90596ff98d9c131b0f823828eaedc2c7fff15",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/CreateTableOptions.ts": {
+        "version": "c2f215d87e6c4c6a6843dfb7789cf52b5f7d768cb74c0ac57b62677d00a37cf0",
+        "signature": "afe7876d0a23d8e190c903f7bedf5b364fd3699b89b9bee8d2006e52ad80ad45",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/DataMapperConfiguration.ts": {
+        "version": "3f108094eb10ad4b20f8b821b7f97f494e1319ffb26b713883cc11a7400060f3",
+        "signature": "a46b5dcdb3d5362a002d889e969c188e3053621bdccf2654a81b2bd52d634fb3",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/DeleteOptions.ts": {
+        "version": "6cbd16c69b7ab99be0b48a4c44d257c307a0cfb3270bfc3cae65048be67c882e",
+        "signature": "a4652756be17ed07e9ce5e11153add031a4c8568ebd20ab9a8e7e972157c50e5",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/ExecuteUpdateExpressionOptions.ts": {
+        "version": "744240f4f72e90e1e8437bb69b4708b11a250b6f9c83509db3f9eaf1a102c737",
+        "signature": "7303a13ae84bc74355ba92a41e5a9a38387934a5845ff3db8827c815512f988f",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/PutOptions.ts": {
+        "version": "6e30d61293b6ec103a7f047cacc430c99c6098c95a901a35d8ad51c99afbaa0e",
+        "signature": "bcfd60afd932e8da6bf5b8efa7a0f329709873536cda13401b7dfbffcfb3568c",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/QueryOptions.ts": {
+        "version": "cff7c12a52950874e9127e734fece31a60434b9db3d7d7304eb9e0ffffdc1902",
+        "signature": "9b2fbd02634dc8d0b76ced6964a8ec549a5f3561a487ab6222ed7f2b0279e53b",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/ScanOptions.ts": {
+        "version": "700119432c5a2366584ec40879aece4f4adea0450f7f9ad30c59c1c95c387d48",
+        "signature": "71b1ac46921565e81fee6f4520510e817dbc5802a197eaa42289af469c70963e",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/UpdateOptions.ts": {
+        "version": "973840f1dbc72d0d9a1a554822193ca4a97e55386b093f0d4299960277454075",
+        "signature": "bc0d60621cd9a3258c7adac222b0cb768abe9e2272378aae147a92a8cb338400",
+        "affectsGlobalScope": false
+      },
+      "./src/namedParameters/index.ts": {
+        "version": "c0465c747786633e5d8151248d0325705c4d02c7c2dca34427d4894ce7c8515c",
+        "signature": "c0465c747786633e5d8151248d0325705c4d02c7c2dca34427d4894ce7c8515c",
+        "affectsGlobalScope": false
+      },
+      "./src/protocols.ts": {
+        "version": "842f1ddb89bd9d63e77f5589bcfe47f87a45c75bae4717028edb7b720922e404",
+        "signature": "dcefb78f69546b2a4124d596ee5d7bed92fcaa827119c1857fe7ba41f6a6b4f3",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts": {
+        "version": "aff4623fb84241d9001e1a47cf4647ef4a9f601b35ad36b1d8e5750cb48e2bff",
+        "signature": "aff4623fb84241d9001e1a47cf4647ef4a9f601b35ad36b1d8e5750cb48e2bff",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts": {
+        "version": "61deacdc05c65924452b6d13f28d1b6260c612a0b85232d562ebb38672593e17",
+        "signature": "61deacdc05c65924452b6d13f28d1b6260c612a0b85232d562ebb38672593e17",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/ParallelScanInput.d.ts": {
+        "version": "613540847a63c63c5fedccd8b23b416e30fe742858dc961764561b8846e8f22c",
+        "signature": "613540847a63c63c5fedccd8b23b416e30fe742858dc961764561b8846e8f22c",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/ItemIterator.d.ts": {
+        "version": "3ca22522fe25ecb1c13374f50488501d83c7939a5e0d53fca8339935a493c18a",
+        "signature": "3ca22522fe25ecb1c13374f50488501d83c7939a5e0d53fca8339935a493c18a",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/ParallelScanPaginator.d.ts": {
+        "version": "8b8a0ea1d3152650ae1f741791b32b295d11b1a8dc3ce7855f77f1f423a33b43",
+        "signature": "8b8a0ea1d3152650ae1f741791b32b295d11b1a8dc3ce7855f77f1f423a33b43",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/ParallelScanIterator.d.ts": {
+        "version": "8dff5dccc48423194a455e327dd836f9e0737d2b06f88ab4f96005fbe6408af7",
+        "signature": "8dff5dccc48423194a455e327dd836f9e0737d2b06f88ab4f96005fbe6408af7",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/DynamoDbPaginator.d.ts": {
+        "version": "9b9f96078e0248f718b975e98d948b84fdbb2e2d96b4ec147a48613d9adc318f",
+        "signature": "9b9f96078e0248f718b975e98d948b84fdbb2e2d96b4ec147a48613d9adc318f",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/QueryPaginator.d.ts": {
+        "version": "b82dbf8359b6b842bf61c7d899d4a387136fab00515999f32410bbb4b8e04934",
+        "signature": "b82dbf8359b6b842bf61c7d899d4a387136fab00515999f32410bbb4b8e04934",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/QueryIterator.d.ts": {
+        "version": "f542d3f5b3edc268812e63dc2a8408bfdefbc19699304f9f4ddd54b2bdfe2998",
+        "signature": "f542d3f5b3edc268812e63dc2a8408bfdefbc19699304f9f4ddd54b2bdfe2998",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/ScanPaginator.d.ts": {
+        "version": "2fb408778a36572abbe56e6fd621b89c660510f54c57faf32b009da1d17a01bd",
+        "signature": "2fb408778a36572abbe56e6fd621b89c660510f54c57faf32b009da1d17a01bd",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/ScanIterator.d.ts": {
+        "version": "8270383f7ad841d19dc42b56cd4f10604f2e6157d12b5307c234440dbd600c89",
+        "signature": "8270383f7ad841d19dc42b56cd4f10604f2e6157d12b5307c234440dbd600c89",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-query-iterator/build/index.d.ts": {
+        "version": "2600d9910274284acd9472c249c5ee1c9a972bf5accb123be299468ad57636ac",
+        "signature": "2600d9910274284acd9472c249c5ee1c9a972bf5accb123be299468ad57636ac",
+        "affectsGlobalScope": false
+      },
+      "./src/Paginator.ts": {
+        "version": "aef9da9448d9e7689963d762f126933e9f49a045938c1568898e18d88f9a766a",
+        "signature": "9368bd256ec52810ded1318e6c998dee280f9584bac6cec79ba149f938fc2036",
+        "affectsGlobalScope": false
+      },
+      "./src/Iterator.ts": {
+        "version": "00aa9f532ce6aca85110a9030035c8adca7ededd4d94788dc1a1605301d96f1f",
+        "signature": "0199984379ab0237493477c2f8138e84ab8c39440bac79ef4c7342dbd03d78f5",
+        "affectsGlobalScope": false
+      },
+      "./src/marshallStartKey.ts": {
+        "version": "017e8fb6535c95c96341e5055fc9097311679a2a3aab237f17c63c97c5e8486e",
+        "signature": "ef311a437b554a74cd713b23339adc92f72307d59ebf1cc78aaff907d874f904",
+        "affectsGlobalScope": false
+      },
+      "./src/buildScanInput.ts": {
+        "version": "07c5c8594cc2f83b66ebef71d9fac90ee2aa8ba6f2015de09d529f596781ee0e",
+        "signature": "92c0b3765274b1778365e6c4cab483fa29408dc4f91b79b89093eb586cb7d7df",
+        "affectsGlobalScope": false
+      },
+      "./src/ParallelScanPaginator.ts": {
+        "version": "352af5901336383dfe78915065ac29c85248c859165c81a72c032832bf024525",
+        "signature": "67c0e8e7234698463e3ff21002a00c2f8684a0f197f3c6148e8cb44af243cc9a",
+        "affectsGlobalScope": false
+      },
+      "./src/ParallelScanIterator.ts": {
+        "version": "47f63da3bc49396419733ca3c8b41a51fc7eebce5ba51e81320bf0c70b092f34",
+        "signature": "5129eaa6ad611854301260d573e89c3ab29d6e9aa5fcb0dfc0dd4bdeeca25e67",
+        "affectsGlobalScope": false
+      },
+      "./src/QueryPaginator.ts": {
+        "version": "de61f6c92a1ab671c80ffa0465eb25402e35f8b999379e8ec456fcf00ce91955",
+        "signature": "6325ff11b9818ace4024f017d977421d21b89c2cf5b5dc74cb7c16b609cd153c",
+        "affectsGlobalScope": false
+      },
+      "./src/QueryIterator.ts": {
+        "version": "bf86dc223fa58c66bdaa922bbaa17af69d31ad5f4c4253cf433fc197201d5499",
+        "signature": "f2d9ef34cdf32c24bdbd5431108538ade1506986a0cf940142e72a1ece6a9e23",
+        "affectsGlobalScope": false
+      },
+      "./src/ScanPaginator.ts": {
+        "version": "65d36994ea27e7266f3402c283a0bc27fe426216fc58f74b6bb890647462126a",
+        "signature": "04c2cbe53ab0df25f8499e253ffb9c039afd20743637fe41f45bac419987664a",
+        "affectsGlobalScope": false
+      },
+      "./src/ScanIterator.ts": {
+        "version": "0110b68917267e92ba3ff0fe4bf9b86960791503b4f3884906dfc72bb8401e5c",
+        "signature": "3f0ff7163b1756debed34b946afb20e913e9e641ffe105d1bb8665c7b8ddee22",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-batch-iterator/build/BatchGetOptions.d.ts": {
+        "version": "1cb588533ba5110c82bfbac4e47f94599a4c00a084c29c5923ee2d704469744d",
+        "signature": "1cb588533ba5110c82bfbac4e47f94599a4c00a084c29c5923ee2d704469744d",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-batch-iterator/build/types.d.ts": {
+        "version": "d06839d3595e803aaf27935df0fe2a7761e82e6fcb7de0e01acfe15f84459165",
+        "signature": "d06839d3595e803aaf27935df0fe2a7761e82e6fcb7de0e01acfe15f84459165",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-batch-iterator/build/BatchOperation.d.ts": {
+        "version": "41e1f485adabb53c7f90ec6eab8fd9b6ee7437d5495b0ed12677686bd8311120",
+        "signature": "41e1f485adabb53c7f90ec6eab8fd9b6ee7437d5495b0ed12677686bd8311120",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-batch-iterator/build/BatchGet.d.ts": {
+        "version": "55c9037819eae9b98bfb7439e757c566397e9a15d6277ed9cf82069ac248d64b",
+        "signature": "55c9037819eae9b98bfb7439e757c566397e9a15d6277ed9cf82069ac248d64b",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-batch-iterator/build/BatchWrite.d.ts": {
+        "version": "066fe462601058269b8332456e9844e2f24962bb36bd6f05bfa568c6897f4911",
+        "signature": "066fe462601058269b8332456e9844e2f24962bb36bd6f05bfa568c6897f4911",
+        "affectsGlobalScope": false
+      },
+      "../dynamodb-batch-iterator/build/index.d.ts": {
+        "version": "7f503125bb453362a1b9289e021df216a2c9029de707fff3f2561abfc6329ac2",
+        "signature": "7f503125bb453362a1b9289e021df216a2c9029de707fff3f2561abfc6329ac2",
+        "affectsGlobalScope": false
+      },
+      "./src/DataMapper.ts": {
+        "version": "50ebe9c36ddcdc6e1cd5626bb792ecdd52dc7e289bc4c938cf8ea6734f6a6504",
+        "signature": "08cb93cfe6fce707f2af6e66736a7357a85b33acf0b06bf4e11c3163cd9505e9",
+        "affectsGlobalScope": false
+      },
+      "./src/DataMapper.integ.ts": {
+        "version": "8ba288e770ec55acfb8be17f53a2007b955603cce9fdb47a38e67e722d29e789",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./src/embed.ts": {
+        "version": "7750c9fdd6247a5da659921760bc249f86f8f055035e79625c41492259ece98c",
+        "signature": "b06bda9174f32ecf8ed3ea74448e9ba710242989d3cc4e11141fb39a2c770ec1",
+        "affectsGlobalScope": false
+      },
+      "./src/index.ts": {
+        "version": "a97e2a65b94b2274a9f0c57aad7c5bf4379beb70a1deff10420af2e8c6787d76",
+        "signature": "a97e2a65b94b2274a9f0c57aad7c5bf4379beb70a1deff10420af2e8c6787d76",
+        "affectsGlobalScope": false
+      },
+      "./src/DataMapper.spec.ts": {
+        "version": "e6a87bded370f74fe92cac7bdf310ff601b6710c3dd77636e3d251a8c1660419",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./src/ItemNotFoundException.spec.ts": {
+        "version": "0176aab26f3db62c1fd48cb8c09b5bd83a9ea523b146e9c703135da5029129d0",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./src/asyncIteratorSymbolPolyfill.ts": {
+        "version": "facacf5ffe3fb44daac81ca7f874b31f2e4f0ed5dc5e08bd57768035ca3860d2",
+        "signature": "656e4bc2711bc9934568d227e49a11556fd3ba1e3d077167fec15f419d585630",
+        "affectsGlobalScope": true
+      },
+      "./src/embed.spec.ts": {
+        "version": "499324cad09f6cadb3204913307158a88aa1dcdb6d19f4a9f0255cb3fdcefe62",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./src/protocols.spec.ts": {
+        "version": "9726621b77648a6a5bd399ed18e814fffefb2cf539561345ade86eb0254263f8",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@babel/types/lib/index.d.ts": {
+        "version": "bcb65ca77412000e1f33384efbbb615a8dac55aca6aa06a4552b01e7c8cd6577",
+        "signature": "bcb65ca77412000e1f33384efbbb615a8dac55aca6aa06a4552b01e7c8cd6577",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/babel__generator/index.d.ts": {
+        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "8a278bfba7b081cd849434c1130655046639ae90617a682436ed6954e2b57403",
+        "signature": "8a278bfba7b081cd849434c1130655046639ae90617a682436ed6954e2b57403",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "b1401d1d9117a5e4d981c965e3408dcb6e2b63022b716816e6d83599ab369a53",
+        "signature": "b1401d1d9117a5e4d981c965e3408dcb6e2b63022b716816e6d83599ab369a53",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/babel__template/index.d.ts": {
+        "version": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "signature": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/babel__core/index.d.ts": {
+        "version": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
+        "signature": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/inspector.d.ts": {
+        "version": "7e49dbf1543b3ee54853ade4c5e9fa460b6a4eca967efe6bf943e0c505d087ed",
+        "signature": "7e49dbf1543b3ee54853ade4c5e9fa460b6a4eca967efe6bf943e0c505d087ed",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/node/base.d.ts": {
+        "version": "4450cc7b485b116b876cfe3e57d82b76464d6aee1ecefe0bf5ffc03ad9f13cf7",
+        "signature": "4450cc7b485b116b876cfe3e57d82b76464d6aee1ecefe0bf5ffc03ad9f13cf7",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/node/index.d.ts": {
+        "version": "9f0963be7caec23db8944f66bacb623a7bc7391520125845087241a270e9b3ce",
+        "signature": "9f0963be7caec23db8944f66bacb623a7bc7391520125845087241a270e9b3ce",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/fs-extra/index.d.ts": {
+        "version": "aca36e2d27783f4bad7fc1786a532ff76024f0fc8575df48bcd9a5eb452fe7e7",
+        "signature": "aca36e2d27783f4bad7fc1786a532ff76024f0fc8575df48bcd9a5eb452fe7e7",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/minimatch/index.d.ts": {
+        "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/glob/index.d.ts": {
+        "version": "393137c76bd922ba70a2f8bf1ade4f59a16171a02fb25918c168d48875b0cfb0",
+        "signature": "393137c76bd922ba70a2f8bf1ade4f59a16171a02fb25918c168d48875b0cfb0",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/highlight.js/index.d.ts": {
+        "version": "21a2fa3722dc0baba2649e040c3121eb38ce84f5afe35ff1c20276132eaa2f2c",
+        "signature": "21a2fa3722dc0baba2649e040c3121eb38ce84f5afe35ff1c20276132eaa2f2c",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/istanbul-lib-coverage/index.d.ts": {
+        "version": "de18acda71730bac52f4b256ce7511bb56cc21f6f114c59c46782eff2f632857",
+        "signature": "de18acda71730bac52f4b256ce7511bb56cc21f6f114c59c46782eff2f632857",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/istanbul-lib-report/index.d.ts": {
+        "version": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
+        "signature": "7eb06594824ada538b1d8b48c3925a83e7db792f47a081a62cf3e5c4e23cf0ee",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/istanbul-reports/index.d.ts": {
+        "version": "029769d13d9917e3284cb2356ed28a6576e8b07ae6a06ee1e672518adf21a102",
+        "signature": "029769d13d9917e3284cb2356ed28a6576e8b07ae6a06ee1e672518adf21a102",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/jest-diff/build/types.d.ts": {
+        "version": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7",
+        "signature": "71ba0678a3c647f5c0706ae975c031ace0d464e60f9ce56eaa7f1678d065aab7",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/jest-diff/build/index.d.ts": {
+        "version": "162c6f2951bd80ae6e16679378f382200b26bba9de8f255af3a2895fbfa670b4",
+        "signature": "162c6f2951bd80ae6e16679378f382200b26bba9de8f255af3a2895fbfa670b4",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/jest/index.d.ts": {
+        "version": "375c56b1890858dcdae495877f0ce3b694980adf64762e2fd3fbe78e3eac76ba",
+        "signature": "375c56b1890858dcdae495877f0ce3b694980adf64762e2fd3fbe78e3eac76ba",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/lodash/common/common.d.ts": {
+        "version": "29304d38d619bac17128f20c21af1a03256f9edf8f0b82e6674565e09e956dff",
+        "signature": "29304d38d619bac17128f20c21af1a03256f9edf8f0b82e6674565e09e956dff",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/array.d.ts": {
+        "version": "d03a1ae3d39f757c9f22e4e775b940a98d86bb50ec85529b59e32a17b65c2b90",
+        "signature": "d03a1ae3d39f757c9f22e4e775b940a98d86bb50ec85529b59e32a17b65c2b90",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/collection.d.ts": {
+        "version": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
+        "signature": "0c75b204aed9cf6ff1c7b4bed87a3ece0d9d6fc857a6350c0c95ed0c38c814e8",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/date.d.ts": {
+        "version": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+        "signature": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/function.d.ts": {
+        "version": "c9f396e71966bd3a890d8a36a6a497dbf260e9b868158ea7824d4b5421210afe",
+        "signature": "c9f396e71966bd3a890d8a36a6a497dbf260e9b868158ea7824d4b5421210afe",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/lang.d.ts": {
+        "version": "509235563ea2b939e1bbe92aae17e71e6a82ceab8f568b45fb4fce7d72523a32",
+        "signature": "509235563ea2b939e1bbe92aae17e71e6a82ceab8f568b45fb4fce7d72523a32",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/math.d.ts": {
+        "version": "9364c7566b0be2f7b70ff5285eb34686f83ccb01bda529b82d23b2a844653bfb",
+        "signature": "9364c7566b0be2f7b70ff5285eb34686f83ccb01bda529b82d23b2a844653bfb",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/number.d.ts": {
+        "version": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+        "signature": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/object.d.ts": {
+        "version": "28b1db2ffc8a10c84c7286cca8062c44e7e46a12fd028d10bb04d462f6e3dd85",
+        "signature": "28b1db2ffc8a10c84c7286cca8062c44e7e46a12fd028d10bb04d462f6e3dd85",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/seq.d.ts": {
+        "version": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+        "signature": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/string.d.ts": {
+        "version": "4908e4c00832b26ce77a629de8501b0e23a903c094f9e79a7fec313a15da796a",
+        "signature": "4908e4c00832b26ce77a629de8501b0e23a903c094f9e79a7fec313a15da796a",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/common/util.d.ts": {
+        "version": "2630a7cbb597e85d713b7ef47f2946d4280d3d4c02733282770741d40672b1a5",
+        "signature": "2630a7cbb597e85d713b7ef47f2946d4280d3d4c02733282770741d40672b1a5",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/lodash/index.d.ts": {
+        "version": "0714e2046df66c0e93c3330d30dbc0565b3e8cd3ee302cf99e4ede6220e5fec8",
+        "signature": "0714e2046df66c0e93c3330d30dbc0565b3e8cd3ee302cf99e4ede6220e5fec8",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/@types/marked/index.d.ts": {
+        "version": "c08a5e873738f5576ae1ca5810b5ebc30509f05bde56c3a3bbdd75d6c0806e6a",
+        "signature": "c08a5e873738f5576ae1ca5810b5ebc30509f05bde56c3a3bbdd75d6c0806e6a",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/minimist/index.d.ts": {
+        "version": "e437d83044ba17246a861aa9691aa14223ff4a9d6f338ab1269c41c758586a88",
+        "signature": "e437d83044ba17246a861aa9691aa14223ff4a9d6f338ab1269c41c758586a88",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/normalize-package-data/index.d.ts": {
+        "version": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
+        "signature": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/shelljs/index.d.ts": {
+        "version": "b73abc91e3166b1951d302f8008c17e62d32e570e71b2680141f7c3f5d0a990d",
+        "signature": "b73abc91e3166b1951d302f8008c17e62d32e570e71b2680141f7c3f5d0a990d",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/stack-utils/index.d.ts": {
+        "version": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49",
+        "signature": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/uuid/interfaces.d.ts": {
+        "version": "60ea69b95f7bad47f3e6cb8a695a53f5a1e58c2d0fb2c1b4c4adc923b06b7484",
+        "signature": "60ea69b95f7bad47f3e6cb8a695a53f5a1e58c2d0fb2c1b4c4adc923b06b7484",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/uuid/index.d.ts": {
+        "version": "8486ee0cb2ef80c6555941e2e0d081b27e9a07eca9df720c99f001f5220f14b5",
+        "signature": "8486ee0cb2ef80c6555941e2e0d081b27e9a07eca9df720c99f001f5220f14b5",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/yargs-parser/index.d.ts": {
+        "version": "fdfbe321c556c39a2ecf791d537b999591d0849e971dd938d88f460fea0186f6",
+        "signature": "fdfbe321c556c39a2ecf791d537b999591d0849e971dd938d88f460fea0186f6",
+        "affectsGlobalScope": false
+      },
+      "../../node_modules/@types/yargs/index.d.ts": {
+        "version": "1a81627b04dd2feab19e26d3df04e79f50d5dae42b9b5f9181d23dc820c9f048",
+        "signature": "1a81627b04dd2feab19e26d3df04e79f50d5dae42b9b5f9181d23dc820c9f048",
+        "affectsGlobalScope": false
+      }
+    },
+    "options": {
+      "composite": true,
+      "target": 1,
+      "lib": [
+        "lib.es5.d.ts",
+        "lib.es2015.iterable.d.ts",
+        "lib.es2015.promise.d.ts",
+        "lib.es2015.collection.d.ts",
+        "lib.es2015.symbol.wellknown.d.ts",
+        "lib.es2018.asynciterable.d.ts"
+      ],
+      "downlevelIteration": true,
+      "importHelpers": true,
+      "module": 1,
+      "strict": true,
+      "noUnusedLocals": true,
+      "declaration": true,
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "baseUrl": "../..",
+      "paths": {
+        "@invisit/dynamodb-auto-marshaller": [
+          "./packages/dynamodb-auto-marshaller/src"
+        ],
+        "@invisit/dynamodb-auto-marshaller/*": [
+          "./packages/dynamodb-auto-marshaller/src/*"
+        ],
+        "@invisit/dynamodb-batch-iterator": [
+          "./packages/dynamodb-batch-iterator/src"
+        ],
+        "@invisit/dynamodb-batch-iterator/*": [
+          "./packages/dynamodb-batch-iterator/src/*"
+        ],
+        "@invisit/dynamodb-data-mapper": [
+          "./packages/dynamodb-data-mapper/src"
+        ],
+        "@invisit/dynamodb-data-mapper/*": [
+          "./packages/dynamodb-data-mapper/src/*"
+        ],
+        "@invisit/dynamodb-data-mapper-annotations": [
+          "./packages/dynamodb-data-mapper-annotations/src"
+        ],
+        "@invisit/dynamodb-data-mapper-annotations/*": [
+          "./packages/dynamodb-data-mapper-annotations/src/*"
+        ],
+        "@invisit/dynamodb-data-marshaller": [
+          "./packages/dynamodb-data-marshaller/src"
+        ],
+        "@invisit/dynamodb-data-marshaller/*": [
+          "./packages/dynamodb-data-marshaller/src/*"
+        ],
+        "@invisit/dynamodb-expressions": [
+          "./packages/dynamodb-expressions/src"
+        ],
+        "@invisit/dynamodb-expressions/*": [
+          "./packages/dynamodb-expressions/src/*"
+        ],
+        "@invisit/dynamodb-query-iterator": [
+          "./packages/dynamodb-query-iterator/src"
+        ],
+        "@invisit/dynamodb-query-iterator/*": [
+          "./packages/dynamodb-query-iterator/src/*"
+        ]
+      },
+      "rootDir": "./src",
+      "outDir": "./build",
+      "configFilePath": "./tsconfig.json"
+    },
+    "referencedMap": {
+      "../../node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@babel/types/lib/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/babel__core/index.d.ts": [
+        "../../node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/babel__generator/index.d.ts",
+        "../../node_modules/@types/babel__template/index.d.ts",
+        "../../node_modules/@types/babel__traverse/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/babel__generator/index.d.ts": [
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/babel__template/index.d.ts": [
+        "../../node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/babel__traverse/index.d.ts": [
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/fs-extra/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/glob/index.d.ts": [
+        "../../node_modules/@types/minimatch/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/highlight.js/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/istanbul-lib-coverage/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "../../node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/istanbul-reports/index.d.ts": [
+        "../../node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "../../node_modules/@types/istanbul-lib-report/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/jest/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/jest-diff/build/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/array.d.ts": [
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/collection.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/common.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/date.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/function.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/lang.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/math.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/number.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/object.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/seq.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/string.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/util.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/index.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/marked/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/minimatch/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/minimist/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/node/base.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/@types/node/inspector.d.ts"
+      ],
+      "../../node_modules/@types/node/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts"
+      ],
+      "../../node_modules/@types/node/inspector.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/normalize-package-data/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/shelljs/index.d.ts": [
+        "../../node_modules/@types/glob/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/stack-utils/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/uuid/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/@types/uuid/interfaces.d.ts"
+      ],
+      "../../node_modules/@types/uuid/interfaces.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/yargs-parser/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/yargs/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/@types/yargs-parser/index.d.ts"
+      ],
+      "../../node_modules/aws-sdk/clients/dynamodb.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/config-base.d.ts",
+        "../../node_modules/aws-sdk/lib/dynamodb/converter.d.ts",
+        "../../node_modules/aws-sdk/lib/dynamodb/document_client.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts",
+        "../../node_modules/aws-sdk/lib/request.d.ts",
+        "../../node_modules/aws-sdk/lib/response.d.ts",
+        "../../node_modules/aws-sdk/lib/service.d.ts",
+        "../../node_modules/aws-sdk/lib/services/dynamodb.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/config-base.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/credentials.d.ts",
+        "../../node_modules/aws-sdk/lib/credentials/credential_provider_chain.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/credentials.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/credentials/credential_provider_chain.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/credentials.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/dynamodb/converter.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/dynamodb/document_client.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts",
+        "../../node_modules/aws-sdk/lib/request.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/endpoint.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/error.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/http_request.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/endpoint.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/http_response.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/request.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts",
+        "../../node_modules/aws-sdk/lib/http_request.d.ts",
+        "../../node_modules/aws-sdk/lib/response.d.ts",
+        "../../node_modules/aws-sdk/lib/service.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/response.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/http_response.d.ts",
+        "../../node_modules/aws-sdk/lib/request.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/service.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/config-base.d.ts",
+        "../../node_modules/aws-sdk/lib/endpoint.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts",
+        "../../node_modules/aws-sdk/lib/request.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/services/dynamodb.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/dynamodb/document_client.d.ts",
+        "../../node_modules/aws-sdk/lib/service.d.ts"
+      ],
+      "../../node_modules/jest-diff/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/jest-diff/build/types.d.ts"
+      ],
+      "../../node_modules/jest-diff/build/types.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/tslib/tslib.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2016.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es5.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/BinarySet.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-auto-marshaller/build/ObjectSet.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/Marshaller.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-auto-marshaller/build/BinarySet.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValue.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValueSet.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/NumberValue.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/NumberValueSet.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValue.d.ts",
+        "../dynamodb-auto-marshaller/build/ObjectSet.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/ObjectSet.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-auto-marshaller/build/BinarySet.d.ts",
+        "../dynamodb-auto-marshaller/build/Marshaller.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValue.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValueSet.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/BatchGet.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-batch-iterator/build/BatchGetOptions.d.ts",
+        "../dynamodb-batch-iterator/build/BatchOperation.d.ts",
+        "../dynamodb-batch-iterator/build/types.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/BatchGetOptions.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/BatchOperation.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-batch-iterator/build/types.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/BatchWrite.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-batch-iterator/build/BatchOperation.d.ts",
+        "../dynamodb-batch-iterator/build/types.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-batch-iterator/build/BatchGet.d.ts",
+        "../dynamodb-batch-iterator/build/BatchGetOptions.d.ts",
+        "../dynamodb-batch-iterator/build/BatchWrite.d.ts",
+        "../dynamodb-batch-iterator/build/types.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/types.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "./src/BatchState.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts"
+      ],
+      "./src/DataMapper.integ.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/DataMapper.ts",
+        "./src/ItemNotFoundException.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/DataMapper.spec.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/DataMapper.ts",
+        "./src/ItemNotFoundException.ts",
+        "./src/index.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/DataMapper.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-batch-iterator/build/index.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/BatchState.ts",
+        "./src/ItemNotFoundException.ts",
+        "./src/ParallelScanIterator.ts",
+        "./src/QueryIterator.ts",
+        "./src/ScanIterator.ts",
+        "./src/constants.ts",
+        "./src/namedParameters/index.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/ItemNotFoundException.spec.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "./src/ItemNotFoundException.ts"
+      ],
+      "./src/ItemNotFoundException.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "./src/Iterator.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "./src/Paginator.ts"
+      ],
+      "./src/Paginator.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-query-iterator/build/index.d.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/ParallelScanIterator.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/Iterator.ts",
+        "./src/ParallelScanPaginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/ParallelScanPaginator.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-query-iterator/build/index.d.ts",
+        "./src/Paginator.ts",
+        "./src/buildScanInput.ts",
+        "./src/namedParameters/index.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/QueryIterator.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/Iterator.ts",
+        "./src/QueryPaginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/QueryPaginator.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "../dynamodb-query-iterator/build/index.d.ts",
+        "./src/Paginator.ts",
+        "./src/marshallStartKey.ts",
+        "./src/namedParameters/index.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/ScanIterator.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/Iterator.ts",
+        "./src/ScanPaginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/ScanPaginator.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-query-iterator/build/index.d.ts",
+        "./src/Paginator.ts",
+        "./src/buildScanInput.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/asyncIteratorSymbolPolyfill.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "./src/buildScanInput.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/marshallStartKey.ts",
+        "./src/namedParameters/index.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/constants.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "./src/embed.spec.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "./src/embed.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/embed.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/index.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "./src/DataMapper.ts",
+        "./src/ItemNotFoundException.ts",
+        "./src/ParallelScanIterator.ts",
+        "./src/ParallelScanPaginator.ts",
+        "./src/QueryIterator.ts",
+        "./src/QueryPaginator.ts",
+        "./src/ScanIterator.ts",
+        "./src/ScanPaginator.ts",
+        "./src/constants.ts",
+        "./src/embed.ts",
+        "./src/namedParameters/index.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/marshallStartKey.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts"
+      ],
+      "./src/namedParameters/BatchGetOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/namedParameters/GetOptions.ts",
+        "./src/namedParameters/ReadConsistencyConfiguration.ts"
+      ],
+      "./src/namedParameters/CreateTableOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "./src/namedParameters/ProvisionedThroughput.ts",
+        "./src/namedParameters/SecondaryIndexOptions.ts"
+      ],
+      "./src/namedParameters/DataMapperConfiguration.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/DeleteOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/ExecuteUpdateExpressionOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts"
+      ],
+      "./src/namedParameters/GetOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts",
+        "./src/namedParameters/ReadConsistencyConfiguration.ts"
+      ],
+      "./src/namedParameters/ProvisionedThroughput.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "./src/namedParameters/PutOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/QueryOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts",
+        "./src/namedParameters/ReadConsistencyConfiguration.ts"
+      ],
+      "./src/namedParameters/ReadConsistencyConfiguration.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/ScanOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts",
+        "./src/namedParameters/ReadConsistencyConfiguration.ts"
+      ],
+      "./src/namedParameters/SecondaryIndexOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "./src/namedParameters/ProvisionedThroughput.ts"
+      ],
+      "./src/namedParameters/UpdateOptions.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/index.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "./src/namedParameters/BatchGetOptions.ts",
+        "./src/namedParameters/CreateTableOptions.ts",
+        "./src/namedParameters/DataMapperConfiguration.ts",
+        "./src/namedParameters/DeleteOptions.ts",
+        "./src/namedParameters/ExecuteUpdateExpressionOptions.ts",
+        "./src/namedParameters/GetOptions.ts",
+        "./src/namedParameters/ProvisionedThroughput.ts",
+        "./src/namedParameters/PutOptions.ts",
+        "./src/namedParameters/QueryOptions.ts",
+        "./src/namedParameters/ScanOptions.ts",
+        "./src/namedParameters/SecondaryIndexOptions.ts",
+        "./src/namedParameters/UpdateOptions.ts"
+      ],
+      "./src/protocols.spec.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/protocols.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/InvalidSchemaError.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/InvalidValueError.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/KeySchema.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/Schema.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/SchemaType.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-auto-marshaller/build/index.d.ts",
+        "../dynamodb-data-marshaller/build/KeySchema.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/InvalidSchemaError.d.ts",
+        "../dynamodb-data-marshaller/build/InvalidValueError.d.ts",
+        "../dynamodb-data-marshaller/build/KeySchema.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts",
+        "../dynamodb-data-marshaller/build/isKey.d.ts",
+        "../dynamodb-data-marshaller/build/keysFromSchema.d.ts",
+        "../dynamodb-data-marshaller/build/marshallExpression.d.ts",
+        "../dynamodb-data-marshaller/build/marshallItem.d.ts",
+        "../dynamodb-data-marshaller/build/marshallKey.d.ts",
+        "../dynamodb-data-marshaller/build/toSchemaName.d.ts",
+        "../dynamodb-data-marshaller/build/unmarshallItem.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/isKey.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/keysFromSchema.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/KeySchema.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/marshallExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-expressions/build/index.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/marshallItem.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/marshallKey.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/toSchemaName.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-expressions/build/index.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/unmarshallItem.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-expressions/build/AttributeBearingExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts"
+      ],
+      "../dynamodb-expressions/build/AttributePath.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-expressions/build/AttributeValue.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../dynamodb-expressions/build/ConditionExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/AttributeValue.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+        "../dynamodb-expressions/build/FunctionExpression.d.ts"
+      ],
+      "../dynamodb-expressions/build/ExpressionAttributes.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-auto-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts"
+      ],
+      "../dynamodb-expressions/build/FunctionExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributeBearingExpression.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts"
+      ],
+      "../dynamodb-expressions/build/MathematicalExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributeBearingExpression.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+        "../dynamodb-expressions/build/FunctionExpression.d.ts"
+      ],
+      "../dynamodb-expressions/build/ProjectionExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts"
+      ],
+      "../dynamodb-expressions/build/UpdateExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributeBearingExpression.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/AttributeValue.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+        "../dynamodb-expressions/build/FunctionExpression.d.ts",
+        "../dynamodb-expressions/build/MathematicalExpression.d.ts"
+      ],
+      "../dynamodb-expressions/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/AttributeValue.d.ts",
+        "../dynamodb-expressions/build/ConditionExpression.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+        "../dynamodb-expressions/build/FunctionExpression.d.ts",
+        "../dynamodb-expressions/build/MathematicalExpression.d.ts",
+        "../dynamodb-expressions/build/ProjectionExpression.d.ts",
+        "../dynamodb-expressions/build/UpdateExpression.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/DynamoDbPaginator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ItemIterator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ParallelScanInput.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ParallelScanIterator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/ItemIterator.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanInput.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanPaginator.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ParallelScanPaginator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanInput.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/QueryIterator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/ItemIterator.d.ts",
+        "../dynamodb-query-iterator/build/QueryPaginator.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/QueryPaginator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginator.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ScanIterator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/ItemIterator.d.ts",
+        "../dynamodb-query-iterator/build/ScanPaginator.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ScanPaginator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginator.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanInput.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanIterator.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanPaginator.d.ts",
+        "../dynamodb-query-iterator/build/QueryIterator.d.ts",
+        "../dynamodb-query-iterator/build/QueryPaginator.d.ts",
+        "../dynamodb-query-iterator/build/ScanIterator.d.ts",
+        "../dynamodb-query-iterator/build/ScanPaginator.d.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "../../node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@babel/types/lib/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/babel__core/index.d.ts": [
+        "../../node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/babel__generator/index.d.ts",
+        "../../node_modules/@types/babel__template/index.d.ts",
+        "../../node_modules/@types/babel__traverse/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/babel__generator/index.d.ts": [
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/babel__template/index.d.ts": [
+        "../../node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/babel__traverse/index.d.ts": [
+        "../../node_modules/@babel/types/lib/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/fs-extra/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/glob/index.d.ts": [
+        "../../node_modules/@types/minimatch/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/highlight.js/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/istanbul-lib-coverage/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/istanbul-lib-report/index.d.ts": [
+        "../../node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/istanbul-reports/index.d.ts": [
+        "../../node_modules/@types/istanbul-lib-coverage/index.d.ts",
+        "../../node_modules/@types/istanbul-lib-report/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/jest/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/jest-diff/build/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/array.d.ts": [
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/collection.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/common.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/date.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/function.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/lang.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/math.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/number.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/object.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/seq.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/string.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/common/util.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/lodash/index.d.ts": [
+        "../../node_modules/@types/lodash/common/array.d.ts",
+        "../../node_modules/@types/lodash/common/collection.d.ts",
+        "../../node_modules/@types/lodash/common/common.d.ts",
+        "../../node_modules/@types/lodash/common/date.d.ts",
+        "../../node_modules/@types/lodash/common/function.d.ts",
+        "../../node_modules/@types/lodash/common/lang.d.ts",
+        "../../node_modules/@types/lodash/common/math.d.ts",
+        "../../node_modules/@types/lodash/common/number.d.ts",
+        "../../node_modules/@types/lodash/common/object.d.ts",
+        "../../node_modules/@types/lodash/common/seq.d.ts",
+        "../../node_modules/@types/lodash/common/string.d.ts",
+        "../../node_modules/@types/lodash/common/util.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/marked/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/minimatch/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/minimist/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/node/base.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/@types/node/inspector.d.ts"
+      ],
+      "../../node_modules/@types/node/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts"
+      ],
+      "../../node_modules/@types/node/inspector.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/normalize-package-data/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/shelljs/index.d.ts": [
+        "../../node_modules/@types/glob/index.d.ts",
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/stack-utils/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/uuid/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/@types/uuid/interfaces.d.ts"
+      ],
+      "../../node_modules/@types/uuid/interfaces.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/yargs-parser/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/@types/yargs/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/@types/yargs-parser/index.d.ts"
+      ],
+      "../../node_modules/aws-sdk/clients/dynamodb.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/config-base.d.ts",
+        "../../node_modules/aws-sdk/lib/dynamodb/converter.d.ts",
+        "../../node_modules/aws-sdk/lib/dynamodb/document_client.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts",
+        "../../node_modules/aws-sdk/lib/request.d.ts",
+        "../../node_modules/aws-sdk/lib/response.d.ts",
+        "../../node_modules/aws-sdk/lib/service.d.ts",
+        "../../node_modules/aws-sdk/lib/services/dynamodb.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/config-base.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/credentials.d.ts",
+        "../../node_modules/aws-sdk/lib/credentials/credential_provider_chain.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/credentials.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/credentials/credential_provider_chain.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/credentials.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/dynamodb/converter.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/dynamodb/document_client.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts",
+        "../../node_modules/aws-sdk/lib/request.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/endpoint.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/error.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/http_request.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/endpoint.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/http_response.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/request.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts",
+        "../../node_modules/aws-sdk/lib/http_request.d.ts",
+        "../../node_modules/aws-sdk/lib/response.d.ts",
+        "../../node_modules/aws-sdk/lib/service.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/response.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/http_response.d.ts",
+        "../../node_modules/aws-sdk/lib/request.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/service.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/config-base.d.ts",
+        "../../node_modules/aws-sdk/lib/endpoint.d.ts",
+        "../../node_modules/aws-sdk/lib/error.d.ts",
+        "../../node_modules/aws-sdk/lib/request.d.ts"
+      ],
+      "../../node_modules/aws-sdk/lib/services/dynamodb.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/lib/dynamodb/document_client.d.ts",
+        "../../node_modules/aws-sdk/lib/service.d.ts"
+      ],
+      "../../node_modules/jest-diff/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/jest-diff/build/types.d.ts"
+      ],
+      "../../node_modules/jest-diff/build/types.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/tslib/tslib.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2016.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../../node_modules/typescript/lib/lib.es5.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/BinarySet.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-auto-marshaller/build/ObjectSet.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/Marshaller.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-auto-marshaller/build/BinarySet.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValue.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValueSet.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/NumberValue.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/NumberValueSet.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValue.d.ts",
+        "../dynamodb-auto-marshaller/build/ObjectSet.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/ObjectSet.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-auto-marshaller/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-auto-marshaller/build/BinarySet.d.ts",
+        "../dynamodb-auto-marshaller/build/Marshaller.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValue.d.ts",
+        "../dynamodb-auto-marshaller/build/NumberValueSet.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/BatchGet.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-batch-iterator/build/BatchGetOptions.d.ts",
+        "../dynamodb-batch-iterator/build/BatchOperation.d.ts",
+        "../dynamodb-batch-iterator/build/types.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/BatchGetOptions.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/BatchOperation.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-batch-iterator/build/types.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/BatchWrite.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-batch-iterator/build/BatchOperation.d.ts",
+        "../dynamodb-batch-iterator/build/types.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-batch-iterator/build/BatchGet.d.ts",
+        "../dynamodb-batch-iterator/build/BatchGetOptions.d.ts",
+        "../dynamodb-batch-iterator/build/BatchWrite.d.ts",
+        "../dynamodb-batch-iterator/build/types.d.ts"
+      ],
+      "../dynamodb-batch-iterator/build/types.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "./src/BatchState.ts": [
+        "../dynamodb-data-marshaller/build/index.d.ts"
+      ],
+      "./src/DataMapper.ts": [
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/ParallelScanIterator.ts",
+        "./src/QueryIterator.ts",
+        "./src/ScanIterator.ts",
+        "./src/constants.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/ItemNotFoundException.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "./src/Iterator.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "./src/Paginator.ts"
+      ],
+      "./src/Paginator.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-query-iterator/build/index.d.ts"
+      ],
+      "./src/ParallelScanIterator.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/Iterator.ts",
+        "./src/ParallelScanPaginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/ParallelScanPaginator.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/Paginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/QueryIterator.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/Iterator.ts",
+        "./src/QueryPaginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/QueryPaginator.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/Paginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/ScanIterator.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/Iterator.ts",
+        "./src/ScanPaginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/ScanPaginator.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/Paginator.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/buildScanInput.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/namedParameters/index.ts"
+      ],
+      "./src/embed.ts": [
+        "../dynamodb-data-marshaller/build/index.d.ts"
+      ],
+      "./src/index.ts": [
+        "./src/DataMapper.ts",
+        "./src/ItemNotFoundException.ts",
+        "./src/ParallelScanIterator.ts",
+        "./src/ParallelScanPaginator.ts",
+        "./src/QueryIterator.ts",
+        "./src/QueryPaginator.ts",
+        "./src/ScanIterator.ts",
+        "./src/ScanPaginator.ts",
+        "./src/constants.ts",
+        "./src/embed.ts",
+        "./src/namedParameters/index.ts",
+        "./src/protocols.ts"
+      ],
+      "./src/marshallStartKey.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/index.d.ts"
+      ],
+      "./src/namedParameters/BatchGetOptions.ts": [
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "./src/namedParameters/GetOptions.ts",
+        "./src/namedParameters/ReadConsistencyConfiguration.ts"
+      ],
+      "./src/namedParameters/CreateTableOptions.ts": [
+        "./src/namedParameters/ProvisionedThroughput.ts",
+        "./src/namedParameters/SecondaryIndexOptions.ts"
+      ],
+      "./src/namedParameters/DataMapperConfiguration.ts": [
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/DeleteOptions.ts": [
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/ExecuteUpdateExpressionOptions.ts": [
+        "../dynamodb-expressions/build/index.d.ts"
+      ],
+      "./src/namedParameters/GetOptions.ts": [
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts",
+        "./src/namedParameters/ReadConsistencyConfiguration.ts"
+      ],
+      "./src/namedParameters/PutOptions.ts": [
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/QueryOptions.ts": [
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts",
+        "./src/namedParameters/ReadConsistencyConfiguration.ts"
+      ],
+      "./src/namedParameters/ReadConsistencyConfiguration.ts": [
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/ScanOptions.ts": [
+        "../dynamodb-data-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts",
+        "./src/namedParameters/ReadConsistencyConfiguration.ts"
+      ],
+      "./src/namedParameters/SecondaryIndexOptions.ts": [
+        "./src/namedParameters/ProvisionedThroughput.ts"
+      ],
+      "./src/namedParameters/UpdateOptions.ts": [
+        "../dynamodb-expressions/build/index.d.ts",
+        "./src/constants.ts"
+      ],
+      "./src/namedParameters/index.ts": [
+        "./src/namedParameters/BatchGetOptions.ts",
+        "./src/namedParameters/CreateTableOptions.ts",
+        "./src/namedParameters/DataMapperConfiguration.ts",
+        "./src/namedParameters/DeleteOptions.ts",
+        "./src/namedParameters/ExecuteUpdateExpressionOptions.ts",
+        "./src/namedParameters/GetOptions.ts",
+        "./src/namedParameters/ProvisionedThroughput.ts",
+        "./src/namedParameters/PutOptions.ts",
+        "./src/namedParameters/QueryOptions.ts",
+        "./src/namedParameters/ScanOptions.ts",
+        "./src/namedParameters/SecondaryIndexOptions.ts",
+        "./src/namedParameters/UpdateOptions.ts"
+      ],
+      "./src/protocols.ts": [
+        "../dynamodb-data-marshaller/build/index.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/InvalidSchemaError.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/InvalidValueError.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/KeySchema.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/Schema.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/SchemaType.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-auto-marshaller/build/index.d.ts",
+        "../dynamodb-data-marshaller/build/KeySchema.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/InvalidSchemaError.d.ts",
+        "../dynamodb-data-marshaller/build/InvalidValueError.d.ts",
+        "../dynamodb-data-marshaller/build/KeySchema.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts",
+        "../dynamodb-data-marshaller/build/isKey.d.ts",
+        "../dynamodb-data-marshaller/build/keysFromSchema.d.ts",
+        "../dynamodb-data-marshaller/build/marshallExpression.d.ts",
+        "../dynamodb-data-marshaller/build/marshallItem.d.ts",
+        "../dynamodb-data-marshaller/build/marshallKey.d.ts",
+        "../dynamodb-data-marshaller/build/toSchemaName.d.ts",
+        "../dynamodb-data-marshaller/build/unmarshallItem.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/isKey.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/keysFromSchema.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/KeySchema.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/marshallExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-expressions/build/index.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/marshallItem.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/marshallKey.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/toSchemaName.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-expressions/build/index.d.ts"
+      ],
+      "../dynamodb-data-marshaller/build/unmarshallItem.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-data-marshaller/build/Schema.d.ts",
+        "../dynamodb-data-marshaller/build/SchemaType.d.ts"
+      ],
+      "../dynamodb-expressions/build/AttributeBearingExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts"
+      ],
+      "../dynamodb-expressions/build/AttributePath.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts"
+      ],
+      "../dynamodb-expressions/build/AttributeValue.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../dynamodb-expressions/build/ConditionExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/AttributeValue.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+        "../dynamodb-expressions/build/FunctionExpression.d.ts"
+      ],
+      "../dynamodb-expressions/build/ExpressionAttributes.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-auto-marshaller/build/index.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts"
+      ],
+      "../dynamodb-expressions/build/FunctionExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributeBearingExpression.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts"
+      ],
+      "../dynamodb-expressions/build/MathematicalExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributeBearingExpression.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+        "../dynamodb-expressions/build/FunctionExpression.d.ts"
+      ],
+      "../dynamodb-expressions/build/ProjectionExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts"
+      ],
+      "../dynamodb-expressions/build/UpdateExpression.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributeBearingExpression.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/AttributeValue.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+        "../dynamodb-expressions/build/FunctionExpression.d.ts",
+        "../dynamodb-expressions/build/MathematicalExpression.d.ts"
+      ],
+      "../dynamodb-expressions/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-expressions/build/AttributePath.d.ts",
+        "../dynamodb-expressions/build/AttributeValue.d.ts",
+        "../dynamodb-expressions/build/ConditionExpression.d.ts",
+        "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+        "../dynamodb-expressions/build/FunctionExpression.d.ts",
+        "../dynamodb-expressions/build/MathematicalExpression.d.ts",
+        "../dynamodb-expressions/build/ProjectionExpression.d.ts",
+        "../dynamodb-expressions/build/UpdateExpression.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/DynamoDbPaginator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ItemIterator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ParallelScanInput.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ParallelScanIterator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/ItemIterator.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanInput.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanPaginator.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ParallelScanPaginator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanInput.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/QueryIterator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/ItemIterator.d.ts",
+        "../dynamodb-query-iterator/build/QueryPaginator.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/QueryPaginator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginator.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ScanIterator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/ItemIterator.d.ts",
+        "../dynamodb-query-iterator/build/ScanPaginator.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/ScanPaginator.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginator.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts"
+      ],
+      "../dynamodb-query-iterator/build/index.d.ts": [
+        "../../node_modules/@types/node/base.d.ts",
+        "../../node_modules/@types/node/index.d.ts",
+        "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanInput.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanIterator.d.ts",
+        "../dynamodb-query-iterator/build/ParallelScanPaginator.d.ts",
+        "../dynamodb-query-iterator/build/QueryIterator.d.ts",
+        "../dynamodb-query-iterator/build/QueryPaginator.d.ts",
+        "../dynamodb-query-iterator/build/ScanIterator.d.ts",
+        "../dynamodb-query-iterator/build/ScanPaginator.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../../node_modules/@babel/parser/typings/babel-parser.d.ts",
+      "../../node_modules/@babel/types/lib/index.d.ts",
+      "../../node_modules/@types/babel__core/index.d.ts",
+      "../../node_modules/@types/babel__generator/index.d.ts",
+      "../../node_modules/@types/babel__template/index.d.ts",
+      "../../node_modules/@types/babel__traverse/index.d.ts",
+      "../../node_modules/@types/fs-extra/index.d.ts",
+      "../../node_modules/@types/glob/index.d.ts",
+      "../../node_modules/@types/highlight.js/index.d.ts",
+      "../../node_modules/@types/istanbul-lib-coverage/index.d.ts",
+      "../../node_modules/@types/istanbul-lib-report/index.d.ts",
+      "../../node_modules/@types/istanbul-reports/index.d.ts",
+      "../../node_modules/@types/jest/index.d.ts",
+      "../../node_modules/@types/lodash/common/array.d.ts",
+      "../../node_modules/@types/lodash/common/collection.d.ts",
+      "../../node_modules/@types/lodash/common/common.d.ts",
+      "../../node_modules/@types/lodash/common/date.d.ts",
+      "../../node_modules/@types/lodash/common/function.d.ts",
+      "../../node_modules/@types/lodash/common/lang.d.ts",
+      "../../node_modules/@types/lodash/common/math.d.ts",
+      "../../node_modules/@types/lodash/common/number.d.ts",
+      "../../node_modules/@types/lodash/common/object.d.ts",
+      "../../node_modules/@types/lodash/common/seq.d.ts",
+      "../../node_modules/@types/lodash/common/string.d.ts",
+      "../../node_modules/@types/lodash/common/util.d.ts",
+      "../../node_modules/@types/lodash/index.d.ts",
+      "../../node_modules/@types/marked/index.d.ts",
+      "../../node_modules/@types/minimatch/index.d.ts",
+      "../../node_modules/@types/minimist/index.d.ts",
+      "../../node_modules/@types/node/base.d.ts",
+      "../../node_modules/@types/node/index.d.ts",
+      "../../node_modules/@types/node/inspector.d.ts",
+      "../../node_modules/@types/normalize-package-data/index.d.ts",
+      "../../node_modules/@types/shelljs/index.d.ts",
+      "../../node_modules/@types/stack-utils/index.d.ts",
+      "../../node_modules/@types/uuid/index.d.ts",
+      "../../node_modules/@types/uuid/interfaces.d.ts",
+      "../../node_modules/@types/yargs-parser/index.d.ts",
+      "../../node_modules/@types/yargs/index.d.ts",
+      "../../node_modules/aws-sdk/clients/dynamodb.d.ts",
+      "../../node_modules/aws-sdk/lib/config-base.d.ts",
+      "../../node_modules/aws-sdk/lib/credentials.d.ts",
+      "../../node_modules/aws-sdk/lib/credentials/credential_provider_chain.d.ts",
+      "../../node_modules/aws-sdk/lib/dynamodb/converter.d.ts",
+      "../../node_modules/aws-sdk/lib/dynamodb/document_client.d.ts",
+      "../../node_modules/aws-sdk/lib/endpoint.d.ts",
+      "../../node_modules/aws-sdk/lib/error.d.ts",
+      "../../node_modules/aws-sdk/lib/http_request.d.ts",
+      "../../node_modules/aws-sdk/lib/http_response.d.ts",
+      "../../node_modules/aws-sdk/lib/request.d.ts",
+      "../../node_modules/aws-sdk/lib/response.d.ts",
+      "../../node_modules/aws-sdk/lib/service.d.ts",
+      "../../node_modules/aws-sdk/lib/services/dynamodb.d.ts",
+      "../../node_modules/jest-diff/build/index.d.ts",
+      "../../node_modules/jest-diff/build/types.d.ts",
+      "../../node_modules/tslib/tslib.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../../node_modules/typescript/lib/lib.es2016.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "../../node_modules/typescript/lib/lib.es5.d.ts",
+      "../dynamodb-auto-marshaller/build/BinarySet.d.ts",
+      "../dynamodb-auto-marshaller/build/Marshaller.d.ts",
+      "../dynamodb-auto-marshaller/build/NumberValue.d.ts",
+      "../dynamodb-auto-marshaller/build/NumberValueSet.d.ts",
+      "../dynamodb-auto-marshaller/build/ObjectSet.d.ts",
+      "../dynamodb-auto-marshaller/build/index.d.ts",
+      "../dynamodb-batch-iterator/build/BatchGet.d.ts",
+      "../dynamodb-batch-iterator/build/BatchGetOptions.d.ts",
+      "../dynamodb-batch-iterator/build/BatchOperation.d.ts",
+      "../dynamodb-batch-iterator/build/BatchWrite.d.ts",
+      "../dynamodb-batch-iterator/build/index.d.ts",
+      "../dynamodb-batch-iterator/build/types.d.ts",
+      "./src/BatchState.ts",
+      "./src/DataMapper.integ.ts",
+      "./src/DataMapper.spec.ts",
+      "./src/DataMapper.ts",
+      "./src/ItemNotFoundException.spec.ts",
+      "./src/ItemNotFoundException.ts",
+      "./src/Iterator.ts",
+      "./src/Paginator.ts",
+      "./src/ParallelScanIterator.ts",
+      "./src/ParallelScanPaginator.ts",
+      "./src/QueryIterator.ts",
+      "./src/QueryPaginator.ts",
+      "./src/ScanIterator.ts",
+      "./src/ScanPaginator.ts",
+      "./src/asyncIteratorSymbolPolyfill.ts",
+      "./src/buildScanInput.ts",
+      "./src/constants.ts",
+      "./src/embed.spec.ts",
+      "./src/embed.ts",
+      "./src/index.ts",
+      "./src/marshallStartKey.ts",
+      "./src/namedParameters/BatchGetOptions.ts",
+      "./src/namedParameters/CreateTableOptions.ts",
+      "./src/namedParameters/DataMapperConfiguration.ts",
+      "./src/namedParameters/DeleteOptions.ts",
+      "./src/namedParameters/ExecuteUpdateExpressionOptions.ts",
+      "./src/namedParameters/GetOptions.ts",
+      "./src/namedParameters/ProvisionedThroughput.ts",
+      "./src/namedParameters/PutOptions.ts",
+      "./src/namedParameters/QueryOptions.ts",
+      "./src/namedParameters/ReadConsistencyConfiguration.ts",
+      "./src/namedParameters/ScanOptions.ts",
+      "./src/namedParameters/SecondaryIndexOptions.ts",
+      "./src/namedParameters/UpdateOptions.ts",
+      "./src/namedParameters/index.ts",
+      "./src/protocols.spec.ts",
+      "./src/protocols.ts",
+      "../dynamodb-data-marshaller/build/InvalidSchemaError.d.ts",
+      "../dynamodb-data-marshaller/build/InvalidValueError.d.ts",
+      "../dynamodb-data-marshaller/build/KeySchema.d.ts",
+      "../dynamodb-data-marshaller/build/Schema.d.ts",
+      "../dynamodb-data-marshaller/build/SchemaType.d.ts",
+      "../dynamodb-data-marshaller/build/index.d.ts",
+      "../dynamodb-data-marshaller/build/isKey.d.ts",
+      "../dynamodb-data-marshaller/build/keysFromSchema.d.ts",
+      "../dynamodb-data-marshaller/build/marshallExpression.d.ts",
+      "../dynamodb-data-marshaller/build/marshallItem.d.ts",
+      "../dynamodb-data-marshaller/build/marshallKey.d.ts",
+      "../dynamodb-data-marshaller/build/toSchemaName.d.ts",
+      "../dynamodb-data-marshaller/build/unmarshallItem.d.ts",
+      "../dynamodb-expressions/build/AttributeBearingExpression.d.ts",
+      "../dynamodb-expressions/build/AttributePath.d.ts",
+      "../dynamodb-expressions/build/AttributeValue.d.ts",
+      "../dynamodb-expressions/build/ConditionExpression.d.ts",
+      "../dynamodb-expressions/build/ExpressionAttributes.d.ts",
+      "../dynamodb-expressions/build/FunctionExpression.d.ts",
+      "../dynamodb-expressions/build/MathematicalExpression.d.ts",
+      "../dynamodb-expressions/build/ProjectionExpression.d.ts",
+      "../dynamodb-expressions/build/UpdateExpression.d.ts",
+      "../dynamodb-expressions/build/index.d.ts",
+      "../dynamodb-query-iterator/build/DynamoDbPaginator.d.ts",
+      "../dynamodb-query-iterator/build/DynamoDbPaginatorInterface.d.ts",
+      "../dynamodb-query-iterator/build/DynamoDbResultsPage.d.ts",
+      "../dynamodb-query-iterator/build/ItemIterator.d.ts",
+      "../dynamodb-query-iterator/build/ParallelScanInput.d.ts",
+      "../dynamodb-query-iterator/build/ParallelScanIterator.d.ts",
+      "../dynamodb-query-iterator/build/ParallelScanPaginator.d.ts",
+      "../dynamodb-query-iterator/build/QueryIterator.d.ts",
+      "../dynamodb-query-iterator/build/QueryPaginator.d.ts",
+      "../dynamodb-query-iterator/build/ScanIterator.d.ts",
+      "../dynamodb-query-iterator/build/ScanPaginator.d.ts",
+      "../dynamodb-query-iterator/build/index.d.ts"
+    ]
+  },
+  "version": "3.9.7"
+}

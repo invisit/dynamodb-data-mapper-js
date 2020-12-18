@@ -37,7 +37,7 @@ export abstract class BatchOperation<
 
     private readonly throttled = new Set<Promise<ThrottledTableConfiguration<Element>>>();
     private readonly iterator: Iterator<[string, Element]>|AsyncIterator<[string, Element]>;
-    private sourceDone: boolean = false;
+    private sourceDone: boolean | undefined = false;
     private sourceNext: IteratorResult<[string, Element]>|Promise<IteratorResult<[string, Element]>>;
     private lastResolved?: Promise<IteratorResult<[string, Element]>>;
 

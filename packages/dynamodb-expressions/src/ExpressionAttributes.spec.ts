@@ -98,7 +98,7 @@ describe('ExpressionAttributes', () => {
             () => {
                 const expected: ExpressionAttributeValueMap = {};
                 const ea = new ExpressionAttributes();
-                for (const reservedWord of DDB_RESERVED_WORDS) {
+                for (const reservedWord of [...DDB_RESERVED_WORDS]) {
                     const alias = ea.addValue(reservedWord);
                     expected[alias] = {S: reservedWord};
                 }

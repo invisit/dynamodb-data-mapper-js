@@ -1,11 +1,11 @@
 import { Iterator } from './Iterator';
 import { QueryOptions } from './namedParameters';
 import { QueryPaginator } from './QueryPaginator';
-import { ZeroArgumentsConstructor } from '@aws/dynamodb-data-marshaller';
+import { ZeroArgumentsConstructor } from '@invisit/dynamodb-data-marshaller';
 import {
     ConditionExpression,
     ConditionExpressionPredicate,
-} from '@aws/dynamodb-expressions';
+} from '@invisit/dynamodb-expressions';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
 /**

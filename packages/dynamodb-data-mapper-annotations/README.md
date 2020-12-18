@@ -3,7 +3,7 @@
 [![Apache 2 License](https://img.shields.io/github/license/awslabs/dynamodb-data-mapper-js.svg?style=flat)](http://aws.amazon.com/apache-2-0/)
 
 This library provides annotations to allow easy integration of domain classes
-with the `DataMapper` defined in `@aws/dynamodb-data-mapper`. These annotations
+with the `DataMapper` defined in `@invisit/dynamodb-data-mapper`. These annotations
 are provided in a separate NPM package because they rely on two experimental
 features of TypeScript (decorators and metadata decoration) and depend on the
 `reflect-metadata` package.
@@ -26,7 +26,7 @@ import {
     rangeKey,
     table,
     versionAttribute,
-} from '@aws/dynamodb-data-mapper-annotations';
+} from '@invisit/dynamodb-data-mapper-annotations';
 import uuidV4 = require('uuid/v4');
 
 @table('my_table')
@@ -65,8 +65,8 @@ import {
     attribute, 
     hashKey,
     table,
-} from '@aws/dynamodb-data-mapper-annotations';
-import {embed} from '@aws/dynamodb-data-mapper';
+} from '@invisit/dynamodb-data-mapper-annotations';
+import {embed} from '@invisit/dynamodb-data-mapper';
 
 class Comment {
     @attribute()
@@ -163,7 +163,7 @@ this project to change.
 ### Lack of type information in generics
 
 Please note that TypeScript does not emit any metadata about the type parameters
-supplied to generic types, so `Array<string>`, `[number, string]`, and 
+supplied to generic types, so `Array<string>`, `[number, string]`, and
 `MyClass[]` are all exposed as `Array` via the emitted metadata. Without
 additional metadata, this annotation will treat all encountered arrays as
 collections of untyped data. You may supply either a `members` declaration or a
@@ -172,5 +172,5 @@ tuple or typed list, respectively.
 
 Member type declarations are required for maps and sets, though the member type
 will be automatically inferred if a property is declared as being of type
-`BinarySet` or `NumberValueSet` (from the `@aws/dynamodb-auto-marshaller`
+`BinarySet` or `NumberValueSet` (from the `@invisit/dynamodb-auto-marshaller`
 package).

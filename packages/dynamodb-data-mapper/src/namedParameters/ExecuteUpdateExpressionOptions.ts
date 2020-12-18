@@ -1,4 +1,4 @@
-import { ConditionExpression } from '@aws/dynamodb-expressions';
+import { ConditionExpression } from '@invisit/dynamodb-expressions';
 
 export interface ExecuteUpdateExpressionOptions {
     /**

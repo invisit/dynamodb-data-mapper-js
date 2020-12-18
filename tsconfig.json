@@ -1,13 +1,32 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "es5"
-    ],
-    "module": "commonjs",
-    "strict": true
+  
+  
   },
+  "references": [
+    {
+      "path": "./packages/dynamodb-auto-marshaller/tsconfig.json"
+    },
+    {
+      "path": "./packages/dynamodb-batch-iterator/tsconfig.json"
+    },
+    {
+      "path": "./packages/dynamodb-data-mapper/tsconfig.json"
+    },
+    {
+      "path": "./packages/dynamodb-data-mapper-annotations/tsconfig.json"
+    },
+    {
+      "path": "./packages/dynamodb-data-marshaller/tsconfig.json"
+    },
+    {
+      "path": "./packages/dynamodb-expressions/tsconfig.json"
+    },
+    {
+      "path": "./packages/dynamodb-query-iterator/tsconfig.json"
+    }
+  ],
   "typedocOptions": {
     "mode": "file",
     "out": "./docs",

@@ -4,15 +4,15 @@
 
 This library provides utilities for automatically iterating over all DynamoDB
 records returned by a query or scan operation using [async iterables](https://tc39.github.io/ecma262/#sec-asynciterable-interface).
-Each iterator and paginator included in this package automatically tracks 
+Each iterator and paginator included in this package automatically tracks
 DynamoDB metadata and supports resuming iteration from any point within a full
 query or scan.
 
 ## Paginators
 
-Paginators are asynchronous iterables that yield each page of results returned 
-by a DynamoDB `query` or `scan` operation. For sequential paginators, each 
-invocation of the `next` method corresponds to an invocation of the underlying 
+Paginators are asynchronous iterables that yield each page of results returned
+by a DynamoDB `query` or `scan` operation. For sequential paginators, each
+invocation of the `next` method corresponds to an invocation of the underlying
 API operation until all no more pages are available.
 
 ### QueryPaginator
@@ -22,7 +22,7 @@ Retrieves all pages of a DynamoDB `query` in order.
 #### Example usage
 
 ```typescript
-import { QueryPaginator } from '@aws/dynamodb-query-iterator';
+import { QueryPaginator } from '@invisit/dynamodb-query-iterator';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
 const paginator = new QueryPaginator(
@@ -54,13 +54,13 @@ console.log(paginator.consumedCapacity);
 
 #### Suspending and resuming queries
 
-You can suspend any running query from within the `for` loop by using the 
-`break` keyword. If there are still pages that have not been fetched, the 
-`lastEvaluatedKey` property of paginator will be defined. This can be provided 
+You can suspend any running query from within the `for` loop by using the
+`break` keyword. If there are still pages that have not been fetched, the
+`lastEvaluatedKey` property of paginator will be defined. This can be provided
 as the `ExclusiveStartKey` for another `QueryPaginator` instance:
 
 ```typescript
-import { QueryPaginator } from '@aws/dynamodb-query-iterator';
+import { QueryPaginator } from '@invisit/dynamodb-query-iterator';
 import { QueryInput } from 'aws-sdk/clients/dynamodb';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
@@ -98,7 +98,7 @@ Retrieves all pages of a DynamoDB `scan` in order.
 #### Example usage
 
 ```typescript
-import { ScanPaginator } from '@aws/dynamodb-query-iterator';
+import { ScanPaginator } from '@invisit/dynamodb-query-iterator';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
 const paginator = new ScanPaginator(
@@ -132,7 +132,7 @@ keyword. If there are still pages that have not been fetched, the
 as the `ExclusiveStartKey` for another `ScanPaginator` instance:
 
 ```typescript
-import { ScanPaginator } from '@aws/dynamodb-query-iterator';
+import { ScanPaginator } from '@invisit/dynamodb-query-iterator';
 import { ScanInput } from 'aws-sdk/clients/dynamodb';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
@@ -163,14 +163,14 @@ Suspending and resuming the same paginator instance is not supported.
 
 Retrieves all pages of a DynamoDB `scan` utilizing a configurable number of scan
 segments that operate in parallel. When performing a parallel scan, you must
-specify the total number of segments you wish to use, and neither an 
+specify the total number of segments you wish to use, and neither an
 `ExclusiveStartKey` nor a `Segment` identifier may be included with the input
 provided.
 
 #### Example usage
 
 ```typescript
-import { ParallelScanPaginator } from '@aws/dynamodb-query-iterator';
+import { ParallelScanPaginator } from '@invisit/dynamodb-query-iterator';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
 const paginator = new ParallelScanPaginator(
@@ -208,7 +208,7 @@ property of interrupted paginator can be provided to the constructor of another
 import { 
     ParallelScanInput,
     ParallelScanPaginator,
-} from '@aws/dynamodb-query-iterator';
+} from '@invisit/dynamodb-query-iterator';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
 const client = new DynamoDB({region: 'us-west-2'});
@@ -239,7 +239,7 @@ Suspending and resuming the same paginator instance is not supported.
 
 ## Iterators
 
-Iterators are asynchronous iterables that yield each of record returned by a 
+Iterators are asynchronous iterables that yield each of record returned by a
 DynamoDB `query` or `scan` operation. Each invocation of the `next` method may
 invoke the underlying API operation until all no more pages are available.
 
@@ -250,7 +250,7 @@ Retrieves all records of a DynamoDB `query` in order.
 #### Example usage
 
 ```typescript
-import { QueryIterator } from '@aws/dynamodb-query-iterator';
+import { QueryIterator } from '@invisit/dynamodb-query-iterator';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
 const iterator = new QueryIterator(
@@ -288,7 +288,7 @@ Retrieves all records of a DynamoDB `scan` in order.
 #### Example usage
 
 ```typescript
-import { ScanIterator } from '@aws/dynamodb-query-iterator';
+import { ScanIterator } from '@invisit/dynamodb-query-iterator';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
 const iterator = new ScanIterator(
@@ -319,14 +319,14 @@ console.log(iterator.consumedCapacity);
 
 Retrieves all pages of a DynamoDB `scan` utilizing a configurable number of scan
 segments that operate in parallel. When performing a parallel scan, you must
-specify the total number of segments you wish to use, and neither an 
+specify the total number of segments you wish to use, and neither an
 `ExclusiveStartKey` nor a `Segment` identifier may be included with the input
 provided.
 
 #### Example usage
 
 ```typescript
-import { ParallelScanIterator} from '@aws/dynamodb-query-iterator';
+import { ParallelScanIterator} from '@invisit/dynamodb-query-iterator';
 import DynamoDB = require('aws-sdk/clients/dynamodb');
 
 const iterator = new ParallelScanIterator(

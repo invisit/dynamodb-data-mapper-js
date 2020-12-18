@@ -1,23 +1,19 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "es5",
-      "es2015.iterable",
-      "es2015.promise",
-      "es2015.collection",
-      "es2015.symbol.wellknown"
-    ],
-    "downlevelIteration": true,
-    "importHelpers": true,
-    "module": "commonjs",
-    "strict": true,
-    "noUnusedLocals": true,
-    "declaration": true,
-    "sourceMap": true,
     "rootDir": "./src",
     "outDir": "./build"
   },
+  "references": [
+    {
+      "path": "../dynamodb-auto-marshaller/tsconfig.json"
+    },{
+      "path": "../dynamodb-expressions/tsconfig.json"
+    }
+    ],
+  "include": [
+    "./src"
+  ],
   "typedocOptions": {
     "mode": "file",
     "out": "../../docs/packages/dynamodb-data-marshaller",
