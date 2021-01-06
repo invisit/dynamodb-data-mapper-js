@@ -7,4 +7,4 @@
 *.spec.js.map
 
 tsconfig.json
-tsconfig.test.json
+tsconfig.json

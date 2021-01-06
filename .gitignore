@@ -1,7 +1,9 @@
 yarn.lock
 package-lock.json
 .idea/
-
+*.tsbuildinfo
+dist
+build
 # Created by .ignore support plugin (hsz.mobi)
 logs
 *.log
@@ -15,7 +17,6 @@ pids
 .vscode
 lib-cov
 coverage
-build
 .nyc_output
 .grunt
 bower_components

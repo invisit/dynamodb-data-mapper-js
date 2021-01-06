@@ -19,7 +19,7 @@
   "scripts": {
     "docs": "typedoc src",
     "prepublishOnly": "tsc",
-    "pretest": "tsc -p tsconfig.test.json",
+    
     "test": "jest \"build/(.+).spec.js\""
   },
   "author": {

@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "compile": "tsc -b tsconfig.json",
+    "compile:watch": "tsc -b tsconfig.json -w",
     "docs": "typedoc src && lerna run docs",
-    "pretest": "lerna run pretest",
     "test": "jest"
   },
   "author": {

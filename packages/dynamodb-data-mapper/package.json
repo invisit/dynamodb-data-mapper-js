@@ -19,9 +19,9 @@
   "scripts": {
     "build": "tsc",
     "docs": "typedoc src",
-    "integ": "npm run pretest && jest --config=jest.integration.js",
+    "integ": "jest --config=jest.integration.js",
     "prepublishOnly": "npm run build",
-    "pretest": "tsc -p tsconfig.test.json",
+    
     "test": "jest \"build/(.+).spec.js\""
   },
   "author": {
