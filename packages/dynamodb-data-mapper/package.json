@@ -17,10 +17,10 @@
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "//build": "tsc",
     "docs": "typedoc src",
     "integ": "jest --config=jest.integration.js",
-    "prepublishOnly": "npm run build",
+    "//prepublishOnly": "npm run build",
     
     "test": "jest \"build/(.+).spec.js\""
   },
@@ -38,12 +38,11 @@
     "typescript": "^3.4"
   },
   "dependencies": {
-    "@invisit/dynamodb-auto-marshaller": "^0.7.3",
-    "@invisit/dynamodb-batch-iterator": "^0.7.3",
-    "@invisit/dynamodb-data-marshaller": "^0.7.3",
-    "@invisit/dynamodb-expressions": "^0.7.3",
-    "@invisit/dynamodb-query-iterator": "^0.7.3",
-    "tslib": "^1.9"
+    "@invisit/dynamodb-auto-marshaller": "0.7.3",
+    "@invisit/dynamodb-batch-iterator": "0.7.3",
+    "@invisit/dynamodb-data-marshaller": "0.7.3",
+    "@invisit/dynamodb-expressions": "0.7.3",
+    "@invisit/dynamodb-query-iterator": "0.7.3"
   },
   "peerDependencies": {
     "aws-sdk": "^2.7.0"

@@ -33,13 +33,14 @@
     "aws-sdk": "^2.7.0",
     "jest": "^24",
     "typedoc": "^0.14.0",
-    "typescript": "^3.4"
+    "typescript": "^3.4",
+    "tslib": "^1.9"
   },
   "peerDependencies": {
     "aws-sdk": "^2.7.0"
   },
   "dependencies": {
-    "@invisit/dynamodb-auto-marshaller": "^0.7.1",
-    "tslib": "^1.9"
+    "@invisit/dynamodb-auto-marshaller": "0.7.3"
+    
   }
 }

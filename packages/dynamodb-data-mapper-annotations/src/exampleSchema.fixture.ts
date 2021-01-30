@@ -4,7 +4,8 @@ import {
     rangeKey,
     table,
     versionAttribute,
-} from "./";
+} from "./"
+
 import { embed } from '@invisit/dynamodb-data-mapper';
 
 export class Author {

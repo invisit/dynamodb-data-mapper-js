@@ -17,10 +17,10 @@
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "//build": "tsc",
     "docs": "typedoc src",
     "integ": "jest --config=jest.integration.js",
-    "prepublishOnly": "npm run build",
+    "//prepublishOnly": "npm run build",
     
     "test": "jest \"build/(.+).spec.js\""
   },
@@ -39,11 +39,10 @@
     "typescript": "^3.4"
   },
   "dependencies": {
-    "@invisit/dynamodb-auto-marshaller": "^0.7.3",
-    "@invisit/dynamodb-data-mapper": "^0.7.3",
-    "@invisit/dynamodb-data-marshaller": "^0.7.3",
+    "@invisit/dynamodb-auto-marshaller": "0.7.3",
+    "@invisit/dynamodb-data-mapper": "0.7.3",
+    "@invisit/dynamodb-data-marshaller": "0.7.3",
     "reflect-metadata": "^0.1.10",
-    "tslib": "^1.9",
     "uuid": "^3.0.0"
   }
 }
