@@ -6,11 +6,14 @@
     "compile": "tsc -b tsconfig.json",
     "compile:watch": "tsc -b tsconfig.json -w",
     "docs": "typedoc src && lerna run docs",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest -w",
+    "dev": "run-p -l compile:watch test:watch"
   },
   "author": {
-    "name": "AWS SDK for JavaScript Team",
-    "email": "aws-sdk-js@amazon.com"
+    
+    "name": "Jonathan Glanz",
+    "email": "jon@invisit.io"
   },
   "license": "Apache-2.0",
   "devDependencies": {
@@ -19,7 +22,8 @@
     "jest": "^24",
     "lerna": "^3.13",
     "typedoc": "^0.14.0",
-    "typescript": "^3.4"
+    "typescript": "^3.4",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "aws-sdk": "^2.7.0"

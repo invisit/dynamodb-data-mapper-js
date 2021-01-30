@@ -31,3 +31,4 @@ typings/
 *.tgz
 .yarn-integrity
 .env
+/package.json.lerna_backup
