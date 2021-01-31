@@ -14,11 +14,11 @@ export interface SseSpecification {
 }
 
 export interface ProvisionedCreateTableOptions extends ProvisionedThroughput, BaseCreateTableOptions {
-    billingMode?: 'PROVISIONED';
+    billingMode: 'PROVISIONED';
 }
 
 export interface OnDemandCreateTableOptions extends BaseCreateTableOptions {
-    billingMode: 'PAY_PER_REQUEST';
+    billingMode?: 'PAY_PER_REQUEST';
 }
 
 export type CreateTableOptions = ProvisionedCreateTableOptions | OnDemandCreateTableOptions;

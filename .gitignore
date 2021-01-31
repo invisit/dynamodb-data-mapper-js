@@ -1,3 +1,13 @@
+packages/*/src/**/*.js
+packages/*/src/**/*.map
+packages/*/src/**/*.js.map
+packages/*/src/**/*.d.ts
+packages/*/lib
+packages/*/lib-cdk
+packages/*/dist
+packages/*/.layers
+packages/*/.serverless*
+
 yarn.lock
 package-lock.json
 .idea/
