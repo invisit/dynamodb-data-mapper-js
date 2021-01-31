@@ -17,10 +17,7 @@
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "scripts": {
-    "docs": "typedoc src",
-    "prepublishOnly": "tsc",
-    
-    "test": "jest \"build/(.+).spec.js\""
+    "docs": "typedoc src"
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",

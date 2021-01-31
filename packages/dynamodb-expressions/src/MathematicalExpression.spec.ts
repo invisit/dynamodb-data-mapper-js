@@ -41,7 +41,8 @@ describe('MathematicalExpression', () => {
 
     describe('::isMathematicalExpression', () => {
         it('should accept valid mathematical expressions', () => {
-            for (const [expr, _1, _2, _3] of validExpressions) {
+            // noinspection JSUnusedLocalSymbols
+          for (const [expr, _1, _2, _3] of validExpressions) {
                 expect(MathematicalExpression.isMathematicalExpression(expr))
                     .toBe(true);
             }
