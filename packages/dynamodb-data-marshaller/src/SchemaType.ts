@@ -198,9 +198,9 @@ export interface DateType extends BaseType<string|number|Date>, KeyableType {
 /**
  * A constructor that takes no arguments.
  */
-export interface ZeroArgumentsConstructor<T> {
-    new (): T;
-}
+export type ZeroArgumentsConstructor<T extends {} = any> =
+    new (...args:any[]) => T;
+
 
 /**
  * A node represented by its own full Schema. Marshalled as an embedded map.

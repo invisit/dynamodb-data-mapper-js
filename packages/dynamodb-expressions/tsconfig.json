@@ -3,7 +3,8 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./build",
-    "downlevelIteration": true
+    "composite": true
+
   },
   "references": [
     {
@@ -12,6 +13,9 @@
   ],
   "include": [
     "./src"
+  ],
+  "exclude": [
+    "./build"
   ],
   "typedocOptions": {
     "mode": "file",

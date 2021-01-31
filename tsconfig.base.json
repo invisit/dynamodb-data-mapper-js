@@ -17,9 +17,9 @@
     "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    
     "baseUrl": "./",
     "paths": {
+
       "@invisit/dynamodb-auto-marshaller": [
         "./packages/dynamodb-auto-marshaller/src"
       ],

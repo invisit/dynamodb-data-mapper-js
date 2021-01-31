@@ -2,17 +2,22 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "./build"
+    "outDir": "./build",
+    "composite": true
   },
   "references": [
     {
       "path": "../dynamodb-auto-marshaller/tsconfig.json"
-    },{
+    },
+    {
       "path": "../dynamodb-expressions/tsconfig.json"
     }
-    ],
+  ],
   "include": [
     "./src"
+  ],
+  "exclude": [
+    "./build"
   ],
   "typedocOptions": {
     "mode": "file",

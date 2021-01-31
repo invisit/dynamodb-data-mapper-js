@@ -85,6 +85,51 @@ require("./asyncIteratorSymbolPolyfill")
 
 export type DynamoTableResourceDef = CreateTableInput
 
+
+export function getTableResourceDef(
+  valueConstructor: ZeroArgumentsConstructor<any>,
+  options: CreateTableOptions,
+  TableName: string,
+  schema: Schema = getSchema(valueConstructor.prototype),
+
+  keySchema: KeySchema = keysFromSchema(schema)
+): DynamoTableResourceDef {
+  //const schema = getSchema(valueConstructor.prototype);
+  const { attributes, indexKeys, tableKeys } = keySchema
+
+  let throughput: { ProvisionedThroughput?: ProvisionedThroughput } = {}
+
+  const billingMode = asOption(options)
+    .map(({readCapacityUnits, writeCapacityUnits, billingMode}: any) => billingMode ??([readCapacityUnits, writeCapacityUnits].some(isNumber) ? "PROVISIONED" : "PAY_PER_REQUEST"))
+    .getOrElse("PAY_PER_REQUEST") as BillingMode
+
+  if (options.billingMode === "PROVISIONED") {
+    throughput = {
+      ...provisionedThroughput(options.readCapacityUnits, options.writeCapacityUnits)
+    }
+  }
+
+  const { streamViewType = "NONE", indexOptions = {}, sseSpecification } = options
+
+  return {
+    ...indexDefinitions(indexKeys, indexOptions, schema),
+    TableName,
+    ...throughput,
+    BillingMode: billingMode,
+    AttributeDefinitions: attributeDefinitionList(attributes),
+    KeySchema: keyTypesToElementList(tableKeys),
+    StreamSpecification:
+      streamViewType === "NONE" ? { StreamEnabled: false } : { StreamEnabled: true, StreamViewType: streamViewType },
+    SSESpecification: sseSpecification
+      ? {
+        Enabled: true,
+        SSEType: sseSpecification.sseType,
+        KMSMasterKeyId: sseSpecification.kmsMasterKeyId
+      }
+      : { Enabled: false }
+  }
+}
+
 /**
  * Object mapper for domain object interaction with DynamoDB.
  *
@@ -238,44 +283,45 @@ export class DataMapper {
   getTableResourceDef(
     valueConstructor: ZeroArgumentsConstructor<any>,
     options: CreateTableOptions,
-    schema: Schema = getSchema(valueConstructor.prototype),
     TableName: string = this.getTableName(valueConstructor.prototype),
+    schema: Schema = getSchema(valueConstructor.prototype),
     keySchema: KeySchema = keysFromSchema(schema)
   ): DynamoTableResourceDef {
-    //const schema = getSchema(valueConstructor.prototype);
-    const { attributes, indexKeys, tableKeys } = keySchema
-
-    let throughput: { ProvisionedThroughput?: ProvisionedThroughput } = {}
-
-    const billingMode = asOption(options)
-      .map(({readCapacityUnits, writeCapacityUnits, billingMode}: any) => billingMode ??([readCapacityUnits, writeCapacityUnits].some(isNumber) ? "PROVISIONED" : "PAY_PER_REQUEST"))
-      .getOrElse("PAY_PER_REQUEST") as BillingMode
-
-    if (options.billingMode === "PROVISIONED") {
-      throughput = {
-        ...provisionedThroughput(options.readCapacityUnits, options.writeCapacityUnits)
-      }
-    }
-
-    const { streamViewType = "NONE", indexOptions = {}, sseSpecification } = options
-
-    return {
-      ...indexDefinitions(indexKeys, indexOptions, schema),
-      TableName,
-      ...throughput,
-      BillingMode: billingMode,
-      AttributeDefinitions: attributeDefinitionList(attributes),
-      KeySchema: keyTypesToElementList(tableKeys),
-      StreamSpecification:
-        streamViewType === "NONE" ? { StreamEnabled: false } : { StreamEnabled: true, StreamViewType: streamViewType },
-      SSESpecification: sseSpecification
-        ? {
-            Enabled: true,
-            SSEType: sseSpecification.sseType,
-            KMSMasterKeyId: sseSpecification.kmsMasterKeyId
-          }
-        : { Enabled: false }
-    }
+    return getTableResourceDef(valueConstructor, options, TableName, schema, keySchema)
+    // //const schema = getSchema(valueConstructor.prototype);
+    // const { attributes, indexKeys, tableKeys } = keySchema
+    //
+    // let throughput: { ProvisionedThroughput?: ProvisionedThroughput } = {}
+    //
+    // const billingMode = asOption(options)
+    //   .map(({readCapacityUnits, writeCapacityUnits, billingMode}: any) => billingMode ??([readCapacityUnits, writeCapacityUnits].some(isNumber) ? "PROVISIONED" : "PAY_PER_REQUEST"))
+    //   .getOrElse("PAY_PER_REQUEST") as BillingMode
+    //
+    // if (options.billingMode === "PROVISIONED") {
+    //   throughput = {
+    //     ...provisionedThroughput(options.readCapacityUnits, options.writeCapacityUnits)
+    //   }
+    // }
+    //
+    // const { streamViewType = "NONE", indexOptions = {}, sseSpecification } = options
+    //
+    // return {
+    //   ...indexDefinitions(indexKeys, indexOptions, schema),
+    //   TableName,
+    //   ...throughput,
+    //   BillingMode: billingMode,
+    //   AttributeDefinitions: attributeDefinitionList(attributes),
+    //   KeySchema: keyTypesToElementList(tableKeys),
+    //   StreamSpecification:
+    //     streamViewType === "NONE" ? { StreamEnabled: false } : { StreamEnabled: true, StreamViewType: streamViewType },
+    //   SSESpecification: sseSpecification
+    //     ? {
+    //         Enabled: true,
+    //         SSEType: sseSpecification.sseType,
+    //         KMSMasterKeyId: sseSpecification.kmsMasterKeyId
+    //       }
+    //     : { Enabled: false }
+    // }
   }
 
   /**
@@ -399,7 +445,7 @@ export class DataMapper {
    * @param options   Options to configure the DeleteItem operation
    */
   delete<T extends StringToAnyObjectMap = StringToAnyObjectMap>(
-    item: T,
+    item: Partial<T>,
     options?: DeleteOptions
   ): Promise<T | undefined>
 
@@ -409,7 +455,7 @@ export class DataMapper {
   delete<T extends StringToAnyObjectMap = StringToAnyObjectMap>(parameters: DeleteParameters<T>): Promise<T | undefined>
 
   async delete<T extends StringToAnyObjectMap = StringToAnyObjectMap>(
-    itemOrParameters: T | DeleteParameters<T>,
+    itemOrParameters: Partial<T> | DeleteParameters<T>,
     options: DeleteOptions = {}
   ): Promise<T | undefined> {
     let item: T
@@ -549,7 +595,7 @@ export class DataMapper {
    * @param item      The item to get
    * @param options   Options to configure the GetItem operation
    */
-  get<T extends StringToAnyObjectMap = StringToAnyObjectMap>(item: T, options?: GetOptions): Promise<T>
+  get<T extends StringToAnyObjectMap = StringToAnyObjectMap>(item: Partial<T>, options?: GetOptions): Promise<T>
 
   /**
    * @deprecated
@@ -557,7 +603,7 @@ export class DataMapper {
   get<T extends StringToAnyObjectMap = StringToAnyObjectMap>(parameters: GetParameters<T>): Promise<T>
 
   async get<T extends StringToAnyObjectMap = StringToAnyObjectMap>(
-    itemOrParameters: T | GetParameters<T>,
+    itemOrParameters: Partial<T> | GetParameters<T>,
     options: GetOptions = {}
   ): Promise<T | undefined> {
     let item: T
@@ -657,15 +703,15 @@ export class DataMapper {
    * @param item      The item to save to DynamoDB
    * @param options   Options to configure the PutItem operation
    */
-  put<T extends StringToAnyObjectMap = StringToAnyObjectMap>(item: T, options?: PutOptions): Promise<T>
+  put<T extends StringToAnyObjectMap = StringToAnyObjectMap, Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>>(item: Partial<T>, options?: PutOptions): Promise<T>
 
   /**
    * @deprecated
    */
-  put<T extends StringToAnyObjectMap = StringToAnyObjectMap>(parameters: PutParameters<T>): Promise<T>
+  put<T extends StringToAnyObjectMap = StringToAnyObjectMap, Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>>(parameters: PutParameters<T>): Promise<T>
 
-  async put<T extends StringToAnyObjectMap = StringToAnyObjectMap>(
-    itemOrParameters: T | PutParameters<T>,
+  async put<T extends StringToAnyObjectMap = StringToAnyObjectMap, Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>>(
+    itemOrParameters: Partial<T> | PutParameters<T>,
     options: PutOptions = {}
   ): Promise<T> {
     let item: T
@@ -822,7 +868,7 @@ export class DataMapper {
    * @param item      The item to save to DynamoDB
    * @param options   Options to configure the UpdateItem operation
    */
-  update<T extends StringToAnyObjectMap = StringToAnyObjectMap>(item: T, options?: UpdateOptions): Promise<T>
+  update<T extends StringToAnyObjectMap = StringToAnyObjectMap>(item: Partial<T>, options?: UpdateOptions): Promise<T>
 
   /**
    * @deprecated
@@ -830,7 +876,7 @@ export class DataMapper {
   update<T extends StringToAnyObjectMap = StringToAnyObjectMap>(parameters: UpdateParameters<T>): Promise<T>
 
   async update<T extends StringToAnyObjectMap = StringToAnyObjectMap>(
-    itemOrParameters: T | UpdateParameters<T>,
+    itemOrParameters: Partial<T> | UpdateParameters<T>,
     options: UpdateOptions = {}
   ): Promise<T> {
     let item: T

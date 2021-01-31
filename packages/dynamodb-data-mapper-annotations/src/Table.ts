@@ -1,5 +1,7 @@
-import {ClassAnnotation} from './AnnotationShapes';
-import {DynamoDbTable} from '@invisit/dynamodb-data-mapper';
+import { ClassAnnotation } from "./AnnotationShapes"
+import { DynamoDbTable } from "@invisit/dynamodb-data-mapper"
+import { asOption } from "@3fv/prelude-ts"
+import { isString } from "@3fv/guard"
 
 /**
  * Declare a TypeScript class to represent items in a table in a way that is
@@ -10,8 +12,14 @@ import {DynamoDbTable} from '@invisit/dynamodb-data-mapper';
  * @see https://www.typescriptlang.org/docs/handbook/decorators.html
  * @see https://www.typescriptlang.org/docs/handbook/compiler-options.html
  */
-export function Table(tableName: string): ClassAnnotation {
+export function Table(tableNameOverride?: string): ClassAnnotation {
     return constructor => {
-        constructor.prototype[DynamoDbTable] = tableName;
+
+
+      constructor.prototype[DynamoDbTable] = asOption(tableNameOverride)
+        .filter(isString)
+        .orElse(() => asOption(constructor?.name as string))
+        .filter(isString)
+        .getOrThrow(`No name for ctor ${constructor}`)
     };
 }

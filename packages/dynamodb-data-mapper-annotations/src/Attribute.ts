@@ -4,12 +4,14 @@ import { METADATA_TYPE_KEY } from './constants';
 import { BinarySet, NumberValueSet } from "@invisit/dynamodb-auto-marshaller";
 import { DynamoDbSchema } from '@invisit/dynamodb-data-mapper';
 import {
-    DocumentType,
-    KeyableType,
-    Schema,
-    SchemaType,
-    SetType
-} from "@invisit/dynamodb-data-marshaller";
+  DocumentType,
+  KeyableType,
+  ListType,
+  Schema,
+  SchemaType,
+  SetType,
+  ZeroArgumentsConstructor
+} from "@invisit/dynamodb-data-marshaller"
 
 /**
  * Declare a property in a TypeScript class to be part of a DynamoDB schema.
@@ -93,6 +95,18 @@ export function Attribute(
 
         (target as any)[DynamoDbSchema][propertyKey] = schemaType;
     };
+}
+
+
+
+export function ListAttribute(memberType: SchemaType,
+  parameters: Omit<Partial<SchemaType>, "memberType" | "type"> = {}
+  ) {
+  return Attribute({
+    ...parameters,
+    type: "List",
+    memberType
+  } as ListType)
 }
 
 function deriveBaseSchema(target: any): Schema {
