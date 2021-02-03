@@ -75,16 +75,16 @@ import type {
   Projection,
   ProvisionedThroughput,
   PutItemInput,
-  UpdateItemInput, BillingMode
+  UpdateItemInput,
+  BillingMode
 } from "aws-sdk/clients/dynamodb"
 import DynamoDB = require("aws-sdk/clients/dynamodb")
 import { asOption } from "@3fv/prelude-ts"
-import { isNumber } from "@3fv/guard"
+import { isDefined, isNumber } from "@3fv/guard"
 
 require("./asyncIteratorSymbolPolyfill")
 
 export type DynamoTableResourceDef = CreateTableInput
-
 
 export function getTableResourceDef(
   valueConstructor: ZeroArgumentsConstructor<any>,
@@ -100,7 +100,10 @@ export function getTableResourceDef(
   let throughput: { ProvisionedThroughput?: ProvisionedThroughput } = {}
 
   const billingMode = asOption(options)
-    .map(({readCapacityUnits, writeCapacityUnits, billingMode}: any) => billingMode ??([readCapacityUnits, writeCapacityUnits].some(isNumber) ? "PROVISIONED" : "PAY_PER_REQUEST"))
+    .map(
+      ({ readCapacityUnits, writeCapacityUnits, billingMode }: any) =>
+        billingMode ?? ([readCapacityUnits, writeCapacityUnits].some(isNumber) ? "PROVISIONED" : "PAY_PER_REQUEST")
+    )
     .getOrElse("PAY_PER_REQUEST") as BillingMode
 
   if (options.billingMode === "PROVISIONED") {
@@ -111,23 +114,57 @@ export function getTableResourceDef(
 
   const { streamViewType = "NONE", indexOptions = {}, sseSpecification } = options
 
-  return {
-    ...indexDefinitions(indexKeys, indexOptions, schema),
-    TableName,
-    ...throughput,
-    BillingMode: billingMode,
-    AttributeDefinitions: attributeDefinitionList(attributes),
-    KeySchema: keyTypesToElementList(tableKeys),
-    StreamSpecification:
-      streamViewType === "NONE" ? { StreamEnabled: false } : { StreamEnabled: true, StreamViewType: streamViewType },
-    SSESpecification: sseSpecification
-      ? {
-        Enabled: true,
-        SSEType: sseSpecification.sseType,
-        KMSMasterKeyId: sseSpecification.kmsMasterKeyId
-      }
-      : { Enabled: false }
-  }
+  return Object.fromEntries(
+    Object.entries({
+      ...indexDefinitions(indexKeys, indexOptions, schema),
+      TableName,
+      ...throughput,
+      BillingMode: billingMode,
+      AttributeDefinitions: attributeDefinitionList(attributes),
+      KeySchema: keyTypesToElementList(tableKeys),
+      StreamSpecification:
+        streamViewType === "NONE" ? { StreamEnabled: false } : { StreamEnabled: true, StreamViewType: streamViewType },
+      SSESpecification: sseSpecification
+        ? {
+            Enabled: true,
+            SSEType: sseSpecification.sseType,
+            KMSMasterKeyId: sseSpecification.kmsMasterKeyId
+          }
+        : { Enabled: false }
+    }).filter(pair => pair.every(isDefined))
+  ) as any
+}
+
+export function getCFNTableResourceDef(
+  valueConstructor: ZeroArgumentsConstructor<any>,
+  options: CreateTableOptions = {},
+  TableName: string = valueConstructor?.prototype?.[DynamoDbTable],
+  schema: Schema = getSchema(valueConstructor.prototype),
+
+  keySchema: KeySchema = keysFromSchema(schema)
+): DynamoTableResourceDef {
+  return asOption(getTableResourceDef(valueConstructor, options, TableName, schema, keySchema))
+    .map(({ SSESpecification, StreamSpecification, ...other }) => ({
+      ...other,
+
+      ...asOption(StreamSpecification)
+        .filter(spec => spec?.StreamEnabled !== false)
+        .match({
+          None: () => ({}),
+          Some: ({ StreamEnabled, ...spec }) => ({
+            StreamSpecification: spec
+          })
+        }),
+      ...asOption(SSESpecification)
+        .filter(spec => spec?.Enabled !== false)
+        .match({
+          None: () => ({}),
+          Some: ({ Enabled, ...spec }) => ({
+            SSESpecification: spec
+          })
+        })
+    }))
+    .get()
 }
 
 /**
@@ -282,7 +319,7 @@ export class DataMapper {
 
   getTableResourceDef(
     valueConstructor: ZeroArgumentsConstructor<any>,
-    options: CreateTableOptions,
+    options: CreateTableOptions = {},
     TableName: string = this.getTableName(valueConstructor.prototype),
     schema: Schema = getSchema(valueConstructor.prototype),
     keySchema: KeySchema = keysFromSchema(schema)
@@ -535,7 +572,7 @@ export class DataMapper {
    * @param valueConstructor  The constructor used for values in the table.
    * @param options           Options to configure the CreateTable operation
    */
-  async ensureTableExists(valueConstructor: ZeroArgumentsConstructor<any>, options: CreateTableOptions) {
+  async ensureTableExists(valueConstructor: ZeroArgumentsConstructor, options: CreateTableOptions = {}) {
     const TableName = this.getTableName(valueConstructor.prototype)
     try {
       const { Table: { TableStatus } = { TableStatus: "CREATING" } } = await this.client
@@ -703,17 +740,23 @@ export class DataMapper {
    * @param item      The item to save to DynamoDB
    * @param options   Options to configure the PutItem operation
    */
-  put<T extends StringToAnyObjectMap = StringToAnyObjectMap, Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>>(item: Partial<T>, options?: PutOptions): Promise<T>
+  put<
+    T extends StringToAnyObjectMap = StringToAnyObjectMap,
+    Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>
+  >(item: Partial<T>, options?: PutOptions): Promise<T>
 
   /**
    * @deprecated
    */
-  put<T extends StringToAnyObjectMap = StringToAnyObjectMap, Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>>(parameters: PutParameters<T>): Promise<T>
+  put<
+    T extends StringToAnyObjectMap = StringToAnyObjectMap,
+    Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>
+  >(parameters: PutParameters<T>): Promise<T>
 
-  async put<T extends StringToAnyObjectMap = StringToAnyObjectMap, Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>>(
-    itemOrParameters: Partial<T> | PutParameters<T>,
-    options: PutOptions = {}
-  ): Promise<T> {
+  async put<
+    T extends StringToAnyObjectMap = StringToAnyObjectMap,
+    Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>
+  >(itemOrParameters: Partial<T> | PutParameters<T>, options: PutOptions = {}): Promise<T> {
     let item: T
     if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable]) {
       item = (itemOrParameters as PutParameters<T>).item
