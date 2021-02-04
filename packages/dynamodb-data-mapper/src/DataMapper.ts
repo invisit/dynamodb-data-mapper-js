@@ -82,6 +82,7 @@ import type {
 import DynamoDB = require("aws-sdk/clients/dynamodb")
 import { asOption } from "@3fv/prelude-ts"
 import { isDefined, isNumber } from "@3fv/guard"
+import {assign} from "lodash"
 
 require("./asyncIteratorSymbolPolyfill")
 
@@ -96,6 +97,7 @@ export function getTableResourceDef(
   keySchema: KeySchema = keysFromSchema(schema)
 ): DynamoTableResourceDef {
   //const schema = getSchema(valueConstructor.prototype);
+  options = assign({} as CreateTableOptions, valueConstructor.tableOptions ?? {},  options)
   const { attributes, indexKeys, tableKeys } = keySchema
 
   let throughput: { ProvisionedThroughput?: ProvisionedThroughput } = {}
