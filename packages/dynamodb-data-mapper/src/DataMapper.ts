@@ -23,6 +23,7 @@ import {
   ScanOptions,
   ScanParameters,
   SecondaryIndexProjection,
+  TableConstructor,
   UpdateOptions,
   UpdateParameters
 } from "./namedParameters"
@@ -87,7 +88,7 @@ require("./asyncIteratorSymbolPolyfill")
 export type DynamoTableResourceDef = CreateTableInput
 
 export function getTableResourceDef(
-  valueConstructor: ZeroArgumentsConstructor<any>,
+  valueConstructor: TableConstructor<any>,
   options: CreateTableOptions,
   TableName: string,
   schema: Schema = getSchema(valueConstructor.prototype),

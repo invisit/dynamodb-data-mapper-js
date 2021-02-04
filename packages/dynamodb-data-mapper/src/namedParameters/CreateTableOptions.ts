@@ -1,5 +1,6 @@
-import { ProvisionedThroughput } from './ProvisionedThroughput';
-import { PerIndexOptions } from './SecondaryIndexOptions';
+import type { ZeroArgumentsConstructor } from "@invisit/dynamodb-data-marshaller"
+import type { ProvisionedThroughput } from './ProvisionedThroughput';
+import type { PerIndexOptions } from './SecondaryIndexOptions';
 
 interface BaseCreateTableOptions {
     streamViewType?: StreamViewType;
@@ -24,6 +25,10 @@ export interface OnDemandCreateTableOptions extends BaseCreateTableOptions {
 export type CreateTableOptions = ProvisionedCreateTableOptions | OnDemandCreateTableOptions;
 
 export type BillingMode = 'PROVISIONED' | 'PAY_PER_REQUEST';
+
+export type TableConstructor<T extends {} = any> = ZeroArgumentsConstructor<T> & {
+    tableOptions?: CreateTableOptions
+}
 
 /**
  * Server-side encryption type:

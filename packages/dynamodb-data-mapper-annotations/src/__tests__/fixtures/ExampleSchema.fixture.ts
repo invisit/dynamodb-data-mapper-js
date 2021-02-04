@@ -86,7 +86,12 @@ export class Post {
     @Attribute()
     content?: string;
 
-    @Attribute()
+    @Attribute({
+        
+        indexKeyConfigurations: {
+            title: "HASH"
+        }
+    })
     title?: string;
 
     @Attribute()

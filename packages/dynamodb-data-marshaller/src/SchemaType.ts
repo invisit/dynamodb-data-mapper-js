@@ -199,7 +199,7 @@ export interface DateType extends BaseType<string|number|Date>, KeyableType {
  * A constructor that takes no arguments.
  */
 export type ZeroArgumentsConstructor<T extends {} = any> =
-    new (...args:any[]) => T;
+    (new (...args:any[]) => T) 
 
 
 /**
