@@ -74,11 +74,9 @@ export class Post {
 
     static tableOptions: CreateTableOptions = {
         indexOptions: {
-            subIndex: {
+            postTitleIndex: {
                 projection: "all",
-                type: "global",
-                
-
+                type: "global"
             }
         }
     }
@@ -99,9 +97,8 @@ export class Post {
     content?: string;
 
     @Attribute({
-        
         indexKeyConfigurations: {
-            title: "HASH"
+            postTitleIndex: "HASH"
         }
     })
     title?: string;
