@@ -2,7 +2,7 @@ import 'reflect-metadata';
 import { PropertyAnnotation } from './AnnotationShapes';
 import { METADATA_TYPE_KEY } from './constants';
 import { BinarySet, NumberValueSet } from "@invisit/dynamodb-auto-marshaller";
-import { DynamoDbSchema } from '@invisit/dynamodb-data-mapper';
+import { DynamoDbSchema, embed } from "@invisit/dynamodb-data-mapper"
 import {
   DocumentType,
   KeyableType,
@@ -10,8 +10,12 @@ import {
   Schema,
   SchemaType,
   SetType,
+  TypeTag,
   ZeroArgumentsConstructor
 } from "@invisit/dynamodb-data-marshaller"
+import { match, __ } from "ts-pattern"
+import { instanceOf } from "@3fv/prelude-ts"
+import { isClass } from "@3fv/guard"
 
 /**
  * Declare a property in a TypeScript class to be part of a DynamoDB schema.
@@ -97,15 +101,25 @@ export function Attribute(
     };
 }
 
+export function EmbedAttribute(
+  ctor:ZeroArgumentsConstructor,
+  parameters: Omit<Partial<SchemaType>, "memberType" | "type"> = {}
+  ) {
+  return Attribute({...embed(ctor), ...parameters})
+}
 
-
-export function ListAttribute(memberType: SchemaType,
+export function ListAttribute(memberType: ZeroArgumentsConstructor | TypeTag,
   parameters: Omit<Partial<SchemaType>, "memberType" | "type"> = {}
   ) {
   return Attribute({
     ...parameters,
     type: "List",
-    memberType
+    memberType: match<any,SchemaType | TypeTag>(memberType)
+      .with(__.string, (i: TypeTag) => i)
+      .when(isClass, (it: any) => embed(it))
+      .otherwise(() => {
+        throw Error(`Only string or class can be member type`)
+      })
   } as ListType)
 }
 

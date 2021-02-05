@@ -29,7 +29,8 @@
     "@types/jest": "^24",
     "@types/node": "^8.0.4",
     "aws-sdk": "^2.7.0",
-    "jest": "^24",
+    "jest": "26",
+    "ts-jest": "26",
     "typedoc": "^0.14.0",
     "typescript": "^3.4"
   },
@@ -38,7 +39,9 @@
     "@invisit/dynamodb-batch-iterator": "0.7.3",
     "@invisit/dynamodb-data-marshaller": "0.7.3",
     "@invisit/dynamodb-expressions": "0.7.3",
-    "@invisit/dynamodb-query-iterator": "0.7.3"
+    "@invisit/dynamodb-query-iterator": "0.7.3",
+    "aws-sdk": "^2.7",
+    "ts-pattern": "^2.1.1"
   },
   "peerDependencies": {
     "aws-sdk": "^2.7.0"

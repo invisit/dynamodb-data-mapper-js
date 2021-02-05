@@ -1,6 +1,7 @@
 import { BatchState } from "./BatchState"
 import { ReadConsistency, StringToAnyObjectMap, SyncOrAsyncIterable, VERSION, WriteType } from "./constants"
 import { ItemNotFoundException } from "./ItemNotFoundException"
+import { match } from "ts-pattern"
 import {
   BatchGetOptions,
   BatchGetTableOptions,
@@ -11,11 +12,13 @@ import {
   ExecuteUpdateExpressionOptions,
   GetOptions,
   GetParameters,
+  OnDemandCreateTableOptions,
   ParallelScanOptions,
   ParallelScanParameters,
   ParallelScanWorkerOptions,
   ParallelScanWorkerParameters,
   PerIndexOptions,
+  ProvisionedCreateTableOptions,
   PutOptions,
   PutParameters,
   QueryOptions,
@@ -82,7 +85,7 @@ import type {
 import DynamoDB = require("aws-sdk/clients/dynamodb")
 import { asOption } from "@3fv/prelude-ts"
 import { isDefined, isNumber } from "@3fv/guard"
-import {assign} from "lodash"
+import { assign } from "lodash"
 
 require("./asyncIteratorSymbolPolyfill")
 
@@ -97,10 +100,12 @@ export function getTableResourceDef(
   keySchema: KeySchema = keysFromSchema(schema)
 ): DynamoTableResourceDef {
   //const schema = getSchema(valueConstructor.prototype);
-  options = assign({} as CreateTableOptions, valueConstructor.tableOptions ?? {},  options)
+  options = assign(
+    {} as CreateTableOptions,
+    valueConstructor.tableOptions ?? {},
+    options
+  ) as ProvisionedCreateTableOptions & OnDemandCreateTableOptions
   const { attributes, indexKeys, tableKeys } = keySchema
-
-  let throughput: { ProvisionedThroughput?: ProvisionedThroughput } = {}
 
   const billingMode = asOption(options)
     .map(
@@ -109,11 +114,12 @@ export function getTableResourceDef(
     )
     .getOrElse("PAY_PER_REQUEST") as BillingMode
 
-  if (options.billingMode === "PROVISIONED") {
-    throughput = {
+  const throughput: { ProvisionedThroughput?: ProvisionedThroughput } = match(options)
+    .with({ billingMode: "PROVISIONED" }, (options: ProvisionedCreateTableOptions) => ({
       ...provisionedThroughput(options.readCapacityUnits, options.writeCapacityUnits)
-    }
-  }
+    }))
+    .otherwise(() => ({}))
+
 
   const { streamViewType = "NONE", indexOptions = {}, sseSpecification } = options
 

@@ -25,3 +25,5 @@ export type SecondaryIndexOptions
 export interface PerIndexOptions {
     [indexName: string]: SecondaryIndexOptions;
 }
+
+
