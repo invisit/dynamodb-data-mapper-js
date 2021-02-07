@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
-    "target": "es5",
+    "target": "ES5",
     "lib": [
       "es5",
       "es2015.iterable",
@@ -15,7 +15,7 @@
     ],
     "downlevelIteration": true,
     "importHelpers": true,
-    "module": "commonjs",
+    "module": "CommonJS",
     "declaration": true,
     "sourceMap": true,
     "experimentalDecorators": true,
