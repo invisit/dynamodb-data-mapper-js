@@ -3,6 +3,7 @@ import {BinarySet, BinaryValue} from "./BinarySet";
 import {isArrayBuffer} from "./isArrayBuffer";
 import {NumberValue} from "./NumberValue";
 import {NumberValueSet} from "./NumberValueSet";
+import { guard } from "@3fv/guard"
 
 export const EmptyHandlingStrategies = {
     omit: 'omit',
@@ -316,18 +317,25 @@ export class Marshaller {
     }
 
     private marshallObject(object: {[key: string]: any}): AttributeValue {
+      try {
         return {
-            M: Object.keys(object).reduce(
-                (map: AttributeMap, key: string): AttributeMap => {
-                    const marshalled = this.marshallValue(object[key]);
-                    if (marshalled) {
-                        map[key] = marshalled;
-                    }
-                    return map;
-                },
-                {}
-            ),
-        };
+          M: Object.keys(object).reduce(
+            (map: AttributeMap, key: string): AttributeMap => {
+              const marshalled = this.marshallValue(object[key]);
+              if (marshalled) {
+                map[key] = marshalled;
+              }
+              return map;
+            },
+            {}
+          ),
+        }
+      } catch (err) {
+        console.error(`Unable to marshall value (class type, in case we get lucky) is ${object?.constructor?.name ?? "No luck"}`, err)
+        guard(() => console.error(`The object that failed is`, object), err => console.error(`Also failed to log the object shallow`))
+
+        throw err
+      }
     }
 
     private marshallSet(arg: Set<any>): AttributeValue|undefined {
