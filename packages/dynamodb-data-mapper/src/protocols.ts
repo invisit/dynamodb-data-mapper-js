@@ -1,4 +1,6 @@
+import { isString } from "@3fv/guard"
 import {Schema} from '@invisit/dynamodb-data-marshaller';
+import { toTableName } from "./toTableName"
 
 /**
  * Table metadata is reported by items submitted to the data mapper via methods
@@ -69,9 +71,9 @@ export const DynamoDbTable = Symbol('DynamoDbTableName');
 
 export function getTableName(item: any, tableNamePrefix: string = ''): string {
     if (item) {
-        const tableName = item[DynamoDbTable];
+        const tableName = isString(item) ? item : item[DynamoDbTable];
         if (typeof tableName === 'string') {
-            return tableNamePrefix + tableName;
+            return toTableName(tableNamePrefix + tableName);
         }
     }
 

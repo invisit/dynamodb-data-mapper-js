@@ -1,5 +1,5 @@
 import { ClassAnnotation } from "./AnnotationShapes"
-import { DynamoDbTable } from "@invisit/dynamodb-data-mapper"
+import { DynamoDbTable, toTableName } from "@invisit/dynamodb-data-mapper"
 import { asOption } from "@3fv/prelude-ts"
 import { isString } from "@3fv/guard"
 
@@ -20,6 +20,7 @@ export function Table(tableNameOverride?: string): ClassAnnotation {
         .filter(isString)
         .orElse(() => asOption(constructor?.name as string))
         .filter(isString)
+        .map(toTableName)
         .getOrThrow(`No name for ctor ${constructor}`)
     };
 }

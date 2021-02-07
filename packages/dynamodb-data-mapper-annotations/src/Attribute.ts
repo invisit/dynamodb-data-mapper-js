@@ -108,10 +108,11 @@ export function EmbedAttribute(
   return Attribute({...embed(ctor), ...parameters})
 }
 
-export function ListAttribute(memberType: ZeroArgumentsConstructor | TypeTag,
+export function listAttributeDef(
+  memberType: ZeroArgumentsConstructor | TypeTag,
   parameters: Omit<Partial<SchemaType>, "memberType" | "type"> = {}
-  ) {
-  return Attribute({
+) {
+  return {
     ...parameters,
     type: "List",
     memberType: match<any,SchemaType | TypeTag>(memberType)
@@ -120,6 +121,16 @@ export function ListAttribute(memberType: ZeroArgumentsConstructor | TypeTag,
       .otherwise(() => {
         throw Error(`Only string or class can be member type`)
       })
+  } as ListType
+}
+
+export function ListAttribute(memberType: ZeroArgumentsConstructor | TypeTag,
+  parameters: Omit<Partial<SchemaType>, "memberType" | "type"> = {}
+  ) {
+  return Attribute({
+
+    ...listAttributeDef(memberType, parameters)
+
   } as ListType)
 }
 
