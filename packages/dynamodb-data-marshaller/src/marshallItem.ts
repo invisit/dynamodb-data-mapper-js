@@ -240,7 +240,7 @@ export function marshallValue(
 
     if (schemaType.type === 'String') {
         const string = marshallString(input);
-        if (string.length === 0) {
+        if (string === undefined || string === null || string.length === 0) {
             return {NULL: true};
         }
 
@@ -281,7 +281,7 @@ function marshallNumber(input: number): string {
 }
 
 function marshallString(input: {toString(): string}): string {
-    return input.toString();
+    return input?.toString();
 }
 
 function marshallSet<InputType, MarshalledElementType>(

@@ -115,8 +115,8 @@ export function listAttributeDef(
   return {
     ...parameters,
     type: "List",
-    memberType: match<any,SchemaType | TypeTag>(memberType)
-      .with(__.string, (i: TypeTag) => i)
+    memberType: match<any, SchemaType | TypeTag>(memberType)
+      .with(__.string, (i: TypeTag) => ({ type: i } as any))
       .when(isClass, (it: any) => embed(it))
       .otherwise(() => {
         throw Error(`Only string or class can be member type`)

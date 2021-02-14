@@ -8,11 +8,20 @@ import {
     StringType,
 } from '@invisit/dynamodb-data-marshaller';
 
+export type RangeKeySchemaType = Partial<BinaryType|CustomType<any>|DateType|NumberType|StringType>
+
+
+export function rangeKey(
+  parameters: RangeKeySchemaType = {}
+) {
+  return {
+    ...parameters,
+    keyType: 'RANGE',
+  } as RangeKeySchemaType
+}
+
 export function RangeKey(
-    parameters: Partial<BinaryType|CustomType<any>|DateType|NumberType|StringType> = {}
+    parameters: RangeKeySchemaType = {}
 ): PropertyAnnotation {
-    return Attribute({
-        ...parameters,
-        keyType: 'RANGE',
-    });
+    return Attribute(rangeKey(parameters));
 }

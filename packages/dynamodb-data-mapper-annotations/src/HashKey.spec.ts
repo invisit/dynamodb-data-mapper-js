@@ -1,4 +1,4 @@
-import { hashKey } from './HashKey';
+import { HashKey } from './HashKey';
 
 jest.mock('./Attribute', () => ({Attribute: jest.fn()}));
 import {Attribute} from './Attribute';
@@ -9,7 +9,7 @@ describe('hashKey', () => {
     });
 
     it('should call attribute with a defined keyType', () => {
-        hashKey();
+        HashKey();
 
         expect((Attribute as any).mock.calls.length).toBe(1);
         expect((Attribute as any).mock.calls[0]).toEqual([
@@ -19,7 +19,7 @@ describe('hashKey', () => {
 
     it('should pass through any supplied parameters', () => {
         const attributeName = 'foo'
-        hashKey({attributeName});
+        HashKey({attributeName});
 
         expect((Attribute as any).mock.calls[0][0])
             .toMatchObject({attributeName});
