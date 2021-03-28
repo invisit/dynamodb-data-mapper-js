@@ -5,7 +5,7 @@ module.exports = {
   tabWidth: 2,
   semi: false,
   singleQuote: false,
-  parser: "typescript",
+  parser: "babel-ts",
   arrowParens: "avoid",
   quoteProps: "as-needed",
   jsxSingleQuote: false,
