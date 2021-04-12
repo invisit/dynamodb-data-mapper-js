@@ -13,6 +13,7 @@
       "ES2019",
       "esnext.asynciterable"
     ],
+    "resolveJsonModule": true,
     "downlevelIteration": true,
     "importHelpers": true,
     "module": "CommonJS",
