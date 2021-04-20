@@ -41,6 +41,7 @@ export class QueryPaginator<T> extends Paginator<T> {
             readConsistency,
             scanIndexForward,
             startKey,
+            select,
             tableNamePrefix: prefix,
         } = options;
 
@@ -49,6 +50,8 @@ export class QueryPaginator<T> extends Paginator<T> {
             ScanIndexForward: scanIndexForward,
             Limit: pageSize,
             IndexName: indexName,
+            Select: select ?? "ALL"
+            
         };
 
         if (readConsistency === 'strong') {

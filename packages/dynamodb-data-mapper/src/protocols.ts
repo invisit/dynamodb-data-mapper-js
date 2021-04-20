@@ -1,5 +1,5 @@
 import { isString } from "@3fv/guard"
-import {Schema} from '@invisit/dynamodb-data-marshaller';
+import { Schema } from "@invisit/dynamodb-data-marshaller"
 import { toTableName } from "./toTableName"
 
 /**
@@ -32,20 +32,20 @@ import { toTableName } from "./toTableName"
  *          }
  *      }
  */
-export const DynamoDbSchema = Symbol('DynamoDbSchema');
+export const DynamoDbSchema = Symbol("DynamoDbSchema")
 
 export function getSchema(item: any): Schema {
-    if (item) {
-        const schema = item[DynamoDbSchema];
-        if (schema && typeof schema === 'object') {
-            return schema;
-        }
+  if (item) {
+    const schema = [item, item?.prototype].filter(Boolean).map(it => it?.[DynamoDbSchema]).filter(Boolean)[0]
+    if (schema && typeof schema === "object") {
+      return schema
     }
+  }
 
-    throw new Error(
-        'The provided item did not adhere to the DynamoDbDocument protocol.' +
-        ' No object property was found at the `DynamoDbSchema` symbol'
-    );
+  throw new Error(
+    "The provided item did not adhere to the DynamoDbDocument protocol." +
+      " No object property was found at the `DynamoDbSchema` symbol"
+  )
 }
 
 /**
@@ -67,23 +67,21 @@ export function getSchema(item: any): Schema {
  *          }
  *      }
  */
-export const DynamoDbTable = Symbol('DynamoDbTableName');
+export const DynamoDbTable = Symbol("DynamoDbTableName")
 
-export function getTableName(item: any, tableNamePrefix: string = ''): string {
-    if (item) {
-        const tableName = isString(item) ? item : item[DynamoDbTable];
-        if (typeof tableName === 'string') {
-            return toTableName(tableNamePrefix + tableName);
-        }
+export function getTableName(item: any, tableNamePrefix: string = ""): string {
+  if (item) {
+    const tableName = isString(item) ? item : item[DynamoDbTable]
+    if (typeof tableName === "string") {
+      return toTableName(tableNamePrefix + tableName)
     }
+  }
 
-    throw new Error(
-        'The provided item did not adhere to the DynamoDbTable protocol. No' +
-        ' string property was found at the `DynamoDbTable` symbol'
-    );
+  throw new Error(
+    "The provided item did not adhere to the DynamoDbTable protocol. No" +
+      " string property was found at the `DynamoDbTable` symbol"
+  )
 }
-
-
 
 /**
  * Used to designate which fields on an object have been changed. The method
@@ -112,4 +110,4 @@ export function getTableName(item: any, tableNamePrefix: string = ''): string {
  *          }
  *      }
  */
-export const DynamoDbDirtyFields = Symbol('DynamoDbDirtyFields');
+export const DynamoDbDirtyFields = Symbol("DynamoDbDirtyFields")

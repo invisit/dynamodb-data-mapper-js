@@ -18,7 +18,6 @@
   "types": "./build/index.d.ts",
   "scripts": {
     "docs": "typedoc src"
-
   },
   "author": {
     "name": "AWS SDK for JavaScript Team",
@@ -26,6 +25,7 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
+    "@swc/jest": "^0.1.2",
     "@types/jest": "^24",
     "@types/node": "^8.0.4",
     "aws-sdk": "^2.7.0",
