@@ -50,7 +50,9 @@ export class QueryPaginator<T> extends Paginator<T> {
             ScanIndexForward: scanIndexForward,
             Limit: pageSize,
             IndexName: indexName,
-            Select: select ?? "ALL"
+            Select: select ?? (indexName?.length > 0 ?
+              "ALL_PROJECTED_ATTRIBUTES":
+              "ALL_ATTRIBUTES")
             
         };
 
