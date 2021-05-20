@@ -1,0 +1,5 @@
+["trigger", ".", {
+  "name": "rsync-ddb-mapper",
+  "expression": ["type", "d"],
+  "command": ["./scripts/shell-scripts/sync-mac-guest-dev.fish"]
+}]
