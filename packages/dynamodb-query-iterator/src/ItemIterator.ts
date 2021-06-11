@@ -10,7 +10,7 @@ export abstract class ItemIterator<
 > implements AsyncIterableIterator<AttributeMap> {
 
     private _iteratedCount = 0;
-    private lastResolved: Promise<IteratorResult<AttributeMap>> = <any>Promise.resolve();
+    private lastResolved: Promise<IteratorResult<AttributeMap>> = (Promise as any).resolve();
     private readonly pending: Array<AttributeMap> = [];
 
     protected constructor(private readonly paginator: Paginator) {}

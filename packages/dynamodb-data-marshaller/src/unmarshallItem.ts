@@ -111,7 +111,7 @@ function unmarshallValue(schemaType: SchemaType, input: AttributeValue): any {
                 default:
                     throw new InvalidSchemaError(
                         schemaType,
-                        `Unrecognized set member type: ${(<any>schemaType).memberType}`
+                        `Unrecognized set member type: ${((schemaType as any)).memberType}`
                     );
             }
         case 'String':

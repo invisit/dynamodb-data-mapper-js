@@ -13,7 +13,7 @@ export abstract class DynamoDbPaginator implements DynamoDbPaginatorInterface {
     private _lastKey?: Key;
     private _scannedCount = 0;
     private lastResolved: Promise<IteratorResult<DynamoDbResultsPage>>
-        = <any>Promise.resolve();
+        = (Promise as any).resolve();
 
     protected constructor(private readonly limit?: number) {}
 
