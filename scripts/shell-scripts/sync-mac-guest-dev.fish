@@ -26,5 +26,5 @@ log "Syncing ($projectName) to mac-guest-dev"
 rsync -av -e ssh \
   --delete-after \
   --exclude-from=$excludeFromFile \
-  /projects/invisit/$projectName/ \
+  /opt/projects/invisit/$projectName/ \
   mac-guest-dev:/opt/code/$projectName/
