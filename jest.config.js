@@ -15,7 +15,6 @@ Object.assign(global, {
 // noinspection UnnecessaryLocalVariableJS
 const
   doesntStartWith = (test) =>  F.negate(F.startsWith(test)),
-  whitelistPackages = [],
   rootDir = Path.resolve(__dirname),
   packagesDir = Path.join(rootDir,'packages'),
   scriptsDir = Path.join(rootDir, "scripts"),
@@ -32,12 +31,12 @@ const
 log.info("Modules to test: ", testRoots.map(dir => Path.basename(dir.toString())))
 
 module.exports = {
-  preset: 'ts-jest',
+  //preset: 'ts-jest',
   verbose: true,
   projects: flatten(testRoots.map(dir => {
 
     const config = {
-      preset: 'ts-jest',
+      //preset: 'ts-jest',
 
       rootDir: dir,
       testMatch: [
@@ -52,15 +51,28 @@ module.exports = {
       // transform: {
       //   ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
       // },
+      transform: {
+        '^.+\\.(t|j)sx?$': [
+          '@swc-node/jest',
+
+          // configuration
+          {
+            dynamicImport: true,
+            react: {
+              pragma: 'h',
+            },
+          },
+        ],
+      },
       moduleNameMapper: {
         "^\\@invisit\\/([a-zA-Z0-9_-])(\\/.*)?$": "<rootDir>/../$1/src/$2"
       },
-      globals: {
-        "ts-jest": {
-          tsconfig: "<rootDir>/../../tsconfig.json",
-
-        }
-      }
+      // globals: {
+      //   "ts-jest": {
+      //     tsconfig: "<rootDir>/../../tsconfig.json",
+      //
+      //   }
+      // }
 
 
     }
