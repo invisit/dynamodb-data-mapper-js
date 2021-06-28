@@ -41,5 +41,9 @@
   },
   "peerDependencies": {
     "aws-sdk": "^2.7.0"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.npmjs.org"
   }
 }

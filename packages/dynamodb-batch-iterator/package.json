@@ -39,5 +39,9 @@
   "dependencies": {
     "tslib": "^1.9",
     "utf8-bytes": "^0.0.1"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.npmjs.org"
   }
 }

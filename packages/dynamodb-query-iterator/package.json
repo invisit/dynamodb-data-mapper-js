@@ -38,5 +38,9 @@
   },
   "dependencies": {
     "tslib": "^1.9"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.npmjs.org"
   }
 }
