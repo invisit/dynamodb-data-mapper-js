@@ -1,9 +1,13 @@
 {
   "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-  
-  
-  },
+
+  "exclude": [
+    "node_modules",
+    "packages/*/node_modules",
+    "packages/*/build",
+    "packages/*/lib"
+  ],
+  "files": [],
   "references": [
     {
       "path": "./packages/dynamodb-auto-marshaller/tsconfig.json"

@@ -29,16 +29,16 @@
     "@types/jest": "^24",
     "@types/node": "^8.0.4",
     "aws-sdk": "^2.7.0",
-    "jest": "^24",
-    "tslib": "^1.9",
+    "jest": "^26",
     "typedoc": "^0.14.0",
-    "typescript": "4.2.2"
+    "typescript": "^4.2.2"
   },
   "peerDependencies": {
     "aws-sdk": "^2.7.0"
   },
   "dependencies": {
-    "@invisit/dynamodb-auto-marshaller": "^0.7.5"
+    "@invisit/dynamodb-auto-marshaller": "^0.7.5",
+    "queue-microtask": "^1.2.3"
   },
   "publishConfig": {
     "access": "restricted",

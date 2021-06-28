@@ -3,6 +3,7 @@
     "composite": true,
     "target": "ES2017",
     "lib": [
+      "dom",
       "es5",
       "es2015.iterable",
       "es2015.promise",
@@ -20,6 +21,8 @@
     "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
     "baseUrl": "./",
     "paths": {
 
