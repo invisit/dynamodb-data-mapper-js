@@ -1,6 +1,6 @@
 {
   "name": "@invisit/dynamodb-data-mapper-annotations",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Annotations providing easy integration between TypeScript domain objects and the @invisit/dynamodb-data-mapper library",
   "keywords": [
     "aws",
@@ -35,9 +35,9 @@
     "typescript": "4.2.2"
   },
   "dependencies": {
-    "@invisit/dynamodb-auto-marshaller": "^0.7.4",
-    "@invisit/dynamodb-data-mapper": "^0.7.4",
-    "@invisit/dynamodb-data-marshaller": "^0.7.4",
+    "@invisit/dynamodb-auto-marshaller": "^0.7.5",
+    "@invisit/dynamodb-data-mapper": "^0.7.5",
+    "@invisit/dynamodb-data-marshaller": "^0.7.5",
     "reflect-metadata": "^0.1.10",
     "ts-pattern": "2.2.2",
     "uuid": "^3.0.0"
@@ -45,5 +45,6 @@
   "publishConfig": {
     "access": "restricted",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "gitHead": "efdda2fb7c0d35b6db9e68428a9d9dd1337027c4"
 }

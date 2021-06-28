@@ -1,6 +1,6 @@
 {
   "name": "@invisit/dynamodb-expressions",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Composable expression objects for Amazon DynamoDB",
   "keywords": [
     "aws",
@@ -38,10 +38,11 @@
     "aws-sdk": "^2.7.0"
   },
   "dependencies": {
-    "@invisit/dynamodb-auto-marshaller": "^0.7.4"
+    "@invisit/dynamodb-auto-marshaller": "^0.7.5"
   },
   "publishConfig": {
     "access": "restricted",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "gitHead": "efdda2fb7c0d35b6db9e68428a9d9dd1337027c4"
 }

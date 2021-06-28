@@ -1,6 +1,6 @@
 {
   "name": "@invisit/dynamodb-batch-iterator",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Abstraction for DynamoDB batch reads and writes for that handles batch splitting and partial retries with exponential backoff",
   "keywords": [
     "aws",
@@ -43,5 +43,6 @@
   "publishConfig": {
     "access": "restricted",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "gitHead": "efdda2fb7c0d35b6db9e68428a9d9dd1337027c4"
 }

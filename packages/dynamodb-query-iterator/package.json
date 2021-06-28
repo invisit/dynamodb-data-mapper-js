@@ -1,6 +1,6 @@
 {
   "name": "@invisit/dynamodb-query-iterator",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Abstraction for DynamoDB queries and scans that handles pagination and parallel worker coordination",
   "keywords": [
     "aws",
@@ -42,5 +42,6 @@
   "publishConfig": {
     "access": "restricted",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "gitHead": "efdda2fb7c0d35b6db9e68428a9d9dd1337027c4"
 }
