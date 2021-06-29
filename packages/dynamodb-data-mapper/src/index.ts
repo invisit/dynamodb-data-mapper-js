@@ -1,10 +1,13 @@
 import "./shims"
+export * from "./models"
+export * from "./namedParameters"
+
 export * from "./constants"
 export * from "./DataMapper"
 export * from "./embed"
 
 export * from "./ItemNotFoundException"
-export * from "./namedParameters"
+
 export * from "./ParallelScanIterator"
 export * from "./ParallelScanPaginator"
 export * from "./protocols"
