@@ -1,6 +1,6 @@
 {
   "name": "@invisit/dynamodb-data-mapper-annotations",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "description": "Annotations providing easy integration between TypeScript domain objects and the @invisit/dynamodb-data-mapper library",
   "keywords": [
     "aws",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@invisit/dynamodb-auto-marshaller": "^0.7.6",
-    "@invisit/dynamodb-data-mapper": "^0.7.6",
+    "@invisit/dynamodb-data-mapper": "^0.7.7",
     "@invisit/dynamodb-data-marshaller": "^0.7.6",
     "queue-microtask": "^1.2.3",
     "reflect-metadata": "^0.1.10",
