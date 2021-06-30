@@ -9,7 +9,7 @@
     "test:watch": "jest -w",
     "dev": "run-p -l compile:watch test:watch",
     "prepack": "run-s compile",
-    "release:patch": "yarn publish --patch --non-interactive"
+    "release:patch": "lerna version patch -y && lerna publish from-package -y"
   },
   "author": {
     "name": "Jonathan Glanz",
