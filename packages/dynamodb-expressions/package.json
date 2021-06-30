@@ -1,6 +1,6 @@
 {
   "name": "@invisit/dynamodb-expressions",
-  "version": "0.7.6",
+  "version": "0.7.8",
   "description": "Composable expression objects for Amazon DynamoDB",
   "keywords": [
     "aws",
@@ -37,7 +37,7 @@
     "aws-sdk": "^2.7.0"
   },
   "dependencies": {
-    "@invisit/dynamodb-auto-marshaller": "^0.7.6",
+    "@invisit/dynamodb-auto-marshaller": "^0.7.8",
     "queue-microtask": "^1.2.3"
   },
   "publishConfig": {
