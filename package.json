@@ -2,13 +2,14 @@
   "name": "@invisit/dynamodb-data-mapper-js-project",
   "private": true,
   "scripts": {
-    "//bootstrap": "lerna bootstrap",
     "compile": "tsc -b tsconfig.json",
     "compile:watch": "tsc -b tsconfig.json -w",
     "docs": "typedoc src && lerna run docs",
     "test": "jest",
     "test:watch": "jest -w",
-    "dev": "run-p -l compile:watch test:watch"
+    "dev": "run-p -l compile:watch test:watch",
+    "prepack": "run-s compile",
+    "release:patch": "yarn publish --patch --non-interactive"
   },
   "author": {
     "name": "Jonathan Glanz",
