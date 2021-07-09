@@ -3,7 +3,7 @@ import {
   ZeroArgumentsConstructor,
   unmarshallItem
 } from "@invisit/dynamodb-data-marshaller"
-import {Bind} from "@invisit/decorators"
+
 import {
   DataMapper,
   UpdateOptions,
@@ -38,6 +38,24 @@ import * as AWS from "aws-sdk"
 const log = getLogger(__filename)
 const { debug } = log
 const isNotEmpty = negate(isEmpty)
+
+
+function Bind<A>(
+  target: A,
+  propertyKey:string,
+  descriptor:PropertyDescriptor
+) {
+  const fn = descriptor.value
+
+  return {
+    configurable: true,
+    get() {
+      return fn.bind(this)
+    }
+  }
+
+}
+
 async function iterableToArray<T = any>(
   iterator: AsyncIterableIterator<T> | IterableIterator<T>
 ) {
@@ -49,6 +67,8 @@ async function iterableToArray<T = any>(
 
   return items
 }
+
+
 
 export class DynamoRepository<
   T extends StringToAnyObjectMap,
@@ -135,6 +155,7 @@ export class DynamoRepository<
     )
   }
 
+  @Bind
   async executeStatement(
     stmt: string,
     options: DynamoExecuteStatementOptions<HasSortKey> = {}
