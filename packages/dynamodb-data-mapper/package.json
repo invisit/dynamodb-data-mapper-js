@@ -1,6 +1,6 @@
 {
   "name": "@invisit/dynamodb-data-mapper",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "description": "A schema-based data mapper for Amazon DynamoDB",
   "keywords": [
     "aws",
@@ -36,13 +36,11 @@
   "dependencies": {
     "@3fv/logger-proxy": "^1.0.44",
     "@3fv/prelude-ts": "^0.8.23",
-
     "@invisit/dynamodb-auto-marshaller": "^0.7.8",
     "@invisit/dynamodb-batch-iterator": "^0.7.8",
     "@invisit/dynamodb-data-marshaller": "^0.7.8",
     "@invisit/dynamodb-expressions": "^0.7.8",
     "@invisit/dynamodb-query-iterator": "^0.7.8",
-
     "queue-microtask": "^1.2.3",
     "ts-pattern": "^3.1.2"
   },
