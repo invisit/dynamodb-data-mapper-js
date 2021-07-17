@@ -47,8 +47,8 @@ class TestRecord {
 }
 
 Object.defineProperties(TestRecord.prototype, {
-  [DynamoDbSchema]: { value: schema },
-  [DynamoDbTable]: { value: TableName }
+  [DynamoDbSchema.description]: { value: schema },
+  [DynamoDbTable.description]: { value: TableName }
 })
 
 describe("DataMapper", () => {

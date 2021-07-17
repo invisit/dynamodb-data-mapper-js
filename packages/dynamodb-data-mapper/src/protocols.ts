@@ -1,4 +1,5 @@
 import { isString } from "@3fv/guard"
+import { asOption } from "@3fv/prelude-ts"
 import { Schema } from "@invisit/dynamodb-data-marshaller"
 import { toTableName } from "./toTableName"
 
@@ -34,9 +35,16 @@ import { toTableName } from "./toTableName"
  */
 export const DynamoDbSchema = Symbol("DynamoDbSchema")
 
+
+export function getSchemaFuzzy(o: any, defaultValue:any = undefined): Schema {
+  return asOption([DynamoDbSchema,DynamoDbSchema.description].map(field => o[field]).filter(Boolean)[0])
+    .getOrElse(defaultValue)
+}
+
 export function getSchema(item: any): Schema {
   if (item) {
-    const schema = [item, item?.prototype].filter(Boolean).map(it => it?.[DynamoDbSchema]).filter(Boolean)[0]
+    const schema = [item, item?.prototype].filter(Boolean)
+      .map(it => getSchemaFuzzy(it)).filter(Boolean)[0]
     if (schema && typeof schema === "object") {
       return schema
     }
@@ -55,7 +63,7 @@ export function getSchema(item: any): Schema {
  * @example
  *
  *      class FooDocument {
- *          [DynamoDbTable]() {
+ *          [DynamoDbTable.description]() {
  *              return 'FooTable';
  *          }
  *
@@ -71,7 +79,7 @@ export const DynamoDbTable = Symbol("DynamoDbTableName")
 
 export function getTableName(item: any, tableNamePrefix: string = ""): string {
   if (item) {
-    const tableName = isString(item) ? item : item[DynamoDbTable]
+    const tableName = isString(item) ? item : item[DynamoDbTable.description]
     if (typeof tableName === "string") {
       return toTableName(tableNamePrefix + tableName)
     }

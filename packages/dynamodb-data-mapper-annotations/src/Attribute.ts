@@ -66,10 +66,11 @@ export function Attribute(
     parameters: Partial<SchemaType> = {}
 ): PropertyAnnotation {
     return (target, propertyKey) => {
-        if (!Object.prototype.hasOwnProperty.call(target, DynamoDbSchema)) {
+        if (!Object.prototype.hasOwnProperty.call(target, DynamoDbSchema.description)) {
             Object.defineProperty(
                 target,
-                DynamoDbSchema as any, // TypeScript complains about the use of symbols here, though it should be allowed
+                
+              DynamoDbSchema.description as any, // TypeScript complains about the use of symbols here, though it should be allowed
                 {value: deriveBaseSchema(target)}
             );
         }
@@ -97,7 +98,7 @@ export function Attribute(
             );
         }
 
-        (target as any)[DynamoDbSchema][propertyKey] = schemaType;
+        (target as any)[DynamoDbSchema.description][propertyKey] = schemaType;
     };
 }
 
@@ -140,8 +141,8 @@ function deriveBaseSchema(target: any): Schema {
         if (prototype) {
             return {
                 ...deriveBaseSchema(prototype),
-                ...Object.prototype.hasOwnProperty.call(prototype, DynamoDbSchema)
-                    ? prototype[DynamoDbSchema]
+                ...Object.prototype.hasOwnProperty.call(prototype, DynamoDbSchema.description)
+                    ? prototype[DynamoDbSchema.description]
                     : {}
             };
         }
@@ -191,9 +192,9 @@ function metadataToSchemaType(
                         'Invalid map declaration. You must specify a memberType'
                     );
                 }
-            } else if (ctor.prototype[DynamoDbSchema]) {
+            } else if (ctor.prototype[DynamoDbSchema.description]) {
                 type = 'Document';
-                (rest as DocumentType).members = ctor.prototype[DynamoDbSchema];
+                (rest as DocumentType).members = ctor.prototype[DynamoDbSchema.description];
                 (rest as DocumentType).valueConstructor = ctor;
             } else if (isBinaryType(ctor)) {
                 type = 'Binary';

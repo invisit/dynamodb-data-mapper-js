@@ -6,14 +6,14 @@ jest.mock('uuid', () => ({v4: jest.fn(() => 'uuid')}));
 
 describe('annotations', () => {
     it('should create a schema that includes references to property schemas', () => {
-        const postSchema = (Post.prototype as any)[DynamoDbSchema];
+        const postSchema = (Post.prototype as any)[DynamoDbSchema.description];
         expect(isSchema(postSchema)).toBeTruthy();
         expect(isSchema(postSchema.author.members)).toBe(true);
         expect(isSchema(postSchema.replies.memberType.members)).toBe(true);
     });
 
     it('should support recursive shapes in the generated schema', () => {
-        const commentSchema = (Comment.prototype as any)[DynamoDbSchema];
+        const commentSchema = (Comment.prototype as any)[DynamoDbSchema.description];
         expect(isSchema(commentSchema)).toBe(true);
         expect(isSchema(commentSchema.replies.memberType.members)).toBe(true);
         expect(commentSchema.replies.memberType.members).toBe(commentSchema);

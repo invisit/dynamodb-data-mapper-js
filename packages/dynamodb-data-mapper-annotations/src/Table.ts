@@ -16,7 +16,7 @@ export function Table(tableNameOverride?: string): ClassAnnotation {
     return constructor => {
 
 
-      constructor.prototype[DynamoDbTable] = asOption(tableNameOverride)
+      constructor.prototype[DynamoDbTable.description] = asOption(tableNameOverride)
         .filter(isString)
         .orElse(() => asOption(constructor?.name as string))
         .filter(isString)

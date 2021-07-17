@@ -60,11 +60,11 @@ describe("DataMapper", () => {
     class Item {
       constructor(public fizz?: number) {}
 
-      get [DynamoDbTable](): string {
+      get [DynamoDbTable.description](): string {
         return "foo"
       }
 
-      get [DynamoDbSchema](): Schema {
+      get [DynamoDbSchema.description](): Schema {
         return {
           fizz: {
             type: "Number",
@@ -208,11 +208,11 @@ describe("DataMapper", () => {
 
       constructor(public fizz: number) {}
 
-      get [DynamoDbTable](): string {
+      get [DynamoDbTable.description](): string {
         return "foo"
       }
 
-      get [DynamoDbSchema](): Schema {
+      get [DynamoDbSchema.description](): Schema {
         return {
           fizz: {
             type: "Number",
@@ -249,8 +249,8 @@ describe("DataMapper", () => {
         new Item(0),
         {
           quux: 1,
-          [DynamoDbTable]: "bar",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "bar",
+          [DynamoDbSchema.description]: {
             quux: {
               type: "Number",
               keyType: "HASH"
@@ -293,8 +293,8 @@ describe("DataMapper", () => {
         new Item(0),
         {
           quux: 1,
-          [DynamoDbTable]: "bar",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "bar",
+          [DynamoDbSchema.description]: {
             quux: {
               type: "Number",
               keyType: "HASH"
@@ -529,11 +529,11 @@ describe("DataMapper", () => {
 
       buzz?: Set<string>
 
-      get [DynamoDbTable](): string {
+      get [DynamoDbTable.description](): string {
         return "foo"
       }
 
-      get [DynamoDbSchema](): Schema {
+      get [DynamoDbSchema.description](): Schema {
         return {
           fizz: {
             type: "Number",
@@ -693,11 +693,11 @@ describe("DataMapper", () => {
     })
 
     class Item {
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return "foo"
       }
 
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return {
           id: {
             type: "String",
@@ -792,11 +792,11 @@ describe("DataMapper", () => {
     })
 
     class Item {
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return "foo"
       }
 
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return { id: { type: "String", keyType: "HASH" } }
       }
     }
@@ -956,11 +956,11 @@ describe("DataMapper", () => {
 
     describe("index keys", () => {
       class IndexedItem {
-        get [DynamoDbTable]() {
+        get [DynamoDbTable.description]() {
           return "foo"
         }
 
-        get [DynamoDbSchema]() {
+        get [DynamoDbSchema.description]() {
           return {
             partitionKey: {
               type: "Number",
@@ -1304,7 +1304,7 @@ describe("DataMapper", () => {
     it("should throw if the item does not provide a schema per the data mapper protocol", async () => {
       await expect(
         mapper.delete({
-          [DynamoDbTable]: "foo"
+          [DynamoDbTable.description]: "foo"
         })
       ).rejects.toMatchObject(
         new Error(
@@ -1316,7 +1316,7 @@ describe("DataMapper", () => {
     it("should throw if the item does not provide a table name per the data mapper protocol", async () => {
       await expect(
         mapper.delete({
-          [DynamoDbSchema]: {}
+          [DynamoDbSchema.description]: {}
         })
       ).rejects.toMatchObject(
         new Error(
@@ -1328,8 +1328,8 @@ describe("DataMapper", () => {
     it("should use the table name specified in the supplied table definition", async () => {
       const tableName = "foo"
       await mapper.delete({
-        [DynamoDbTable]: tableName,
-        [DynamoDbSchema]: {}
+        [DynamoDbTable.description]: tableName,
+        [DynamoDbSchema.description]: {}
       })
 
       expect((mockDynamoDbClient.deleteItem.mock.calls[0] as any)[0]).toMatchObject({ TableName: tableName })
@@ -1343,8 +1343,8 @@ describe("DataMapper", () => {
       })
       const tableName = "foo"
       await mapper.delete({
-        [DynamoDbTable]: tableName,
-        [DynamoDbSchema]: {}
+        [DynamoDbTable.description]: tableName,
+        [DynamoDbSchema.description]: {}
       })
 
       expect((mockDynamoDbClient.deleteItem.mock.calls[0] as any)[0]).toMatchObject({
@@ -1356,8 +1356,8 @@ describe("DataMapper", () => {
       await mapper.delete({
         fizz: "buzz",
         pop: new Date(60000),
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             keyType: "HASH"
@@ -1381,8 +1381,8 @@ describe("DataMapper", () => {
       await mapper.delete({
         fizz: "buzz",
         pop: new Date(60000),
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             keyType: "HASH"
@@ -1402,8 +1402,8 @@ describe("DataMapper", () => {
       await mapper.delete({
         fizz: "buzz",
         pop: new Date(60000),
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -1424,8 +1424,8 @@ describe("DataMapper", () => {
       await mapper.delete({
         fizz: "buzz",
         pop: 21,
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -1448,8 +1448,8 @@ describe("DataMapper", () => {
     it("should not include a condition expression when the schema contains a version attribute but the value is undefined", async () => {
       await mapper.delete({
         fizz: "buzz",
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -1470,8 +1470,8 @@ describe("DataMapper", () => {
         {
           fizz: "buzz",
           pop: 21,
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "foo",
@@ -1497,8 +1497,8 @@ describe("DataMapper", () => {
       await mapper.delete({
         fizz: "buzz",
         pop: 21,
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -1519,8 +1519,8 @@ describe("DataMapper", () => {
         {
           fizz: "buzz",
           pop: 21,
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "foo",
@@ -1559,8 +1559,8 @@ describe("DataMapper", () => {
       await mapper.delete(
         {
           fizz: "buzz",
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "bar",
@@ -1600,8 +1600,8 @@ describe("DataMapper", () => {
       const result = await mapper.delete(
         {
           foo: "buzz",
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             foo: {
               type: "String",
               attributeName: "fizz",
@@ -1631,8 +1631,8 @@ describe("DataMapper", () => {
       await mapper.delete({
         item: {
           fizz: "buzz",
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "foo",
@@ -1665,11 +1665,11 @@ describe("DataMapper", () => {
           this.foo = foo
         }
 
-        get [DynamoDbTable]() {
+        get [DynamoDbTable.description]() {
           return "foo"
         }
 
-        get [DynamoDbSchema]() {
+        get [DynamoDbSchema.description]() {
           return {
             foo: {
               type: "String",
@@ -1719,11 +1719,11 @@ describe("DataMapper", () => {
     })
 
     class Item {
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return "foo"
       }
 
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return { id: { type: "String", keyType: "HASH" } }
       }
     }
@@ -1784,11 +1784,11 @@ describe("DataMapper", () => {
     }
 
     class Item {
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return tableName
       }
 
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return schema
       }
     }
@@ -1889,11 +1889,11 @@ describe("DataMapper", () => {
     }
 
     class Item {
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return tableName
       }
 
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return schema
       }
     }
@@ -1979,11 +1979,11 @@ describe("DataMapper", () => {
     }
 
     class Item {
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return tableName
       }
 
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return schema
       }
     }
@@ -2090,7 +2090,7 @@ describe("DataMapper", () => {
     it("should throw if the item does not provide a schema per the data mapper protocol", async () => {
       await expect(
         mapper.get({
-          [DynamoDbTable]: "foo"
+          [DynamoDbTable.description]: "foo"
         })
       ).rejects.toMatchObject(
         new Error(
@@ -2102,7 +2102,7 @@ describe("DataMapper", () => {
     it("should throw if the item does not provide a table name per the data mapper protocol", async () => {
       await expect(
         mapper.get({
-          [DynamoDbSchema]: {}
+          [DynamoDbSchema.description]: {}
         })
       ).rejects.toMatchObject(
         new Error(
@@ -2114,8 +2114,8 @@ describe("DataMapper", () => {
     it("should use the table name specified in the supplied table definition", async () => {
       const tableName = "foo"
       await mapper.get({
-        [DynamoDbTable]: tableName,
-        [DynamoDbSchema]: {}
+        [DynamoDbTable.description]: tableName,
+        [DynamoDbSchema.description]: {}
       })
 
       expect((mockDynamoDbClient.getItem.mock.calls[0] as any)[0]).toMatchObject({ TableName: tableName })
@@ -2129,8 +2129,8 @@ describe("DataMapper", () => {
       })
       const tableName = "foo"
       await mapper.get({
-        [DynamoDbTable]: tableName,
-        [DynamoDbSchema]: {}
+        [DynamoDbTable.description]: tableName,
+        [DynamoDbSchema.description]: {}
       })
 
       expect((mockDynamoDbClient.getItem.mock.calls[0] as any)[0]).toMatchObject({
@@ -2142,8 +2142,8 @@ describe("DataMapper", () => {
       await mapper.get({
         fizz: "buzz",
         pop: new Date(60000),
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             keyType: "HASH"
@@ -2167,8 +2167,8 @@ describe("DataMapper", () => {
       await mapper.get({
         fizz: "buzz",
         pop: new Date(60000),
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             keyType: "HASH"
@@ -2188,8 +2188,8 @@ describe("DataMapper", () => {
       await mapper.get({
         fizz: "buzz",
         pop: new Date(60000),
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -2209,8 +2209,8 @@ describe("DataMapper", () => {
     it("should request a consistent read if the readConsistency is StronglyConsistent", async () => {
       await mapper.get(
         {
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {}
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {}
         },
         { readConsistency: "strong" }
       )
@@ -2224,8 +2224,8 @@ describe("DataMapper", () => {
         readConsistency: "strong"
       })
       await mapper.get({
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {}
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {}
       })
 
       expect((mockDynamoDbClient.getItem.mock.calls[0] as any)[0]).toMatchObject({ ConsistentRead: true })
@@ -2234,8 +2234,8 @@ describe("DataMapper", () => {
     it("should serialize a provided projection expression", async () => {
       await mapper.get(
         {
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "foo",
@@ -2266,8 +2266,8 @@ describe("DataMapper", () => {
           {
             fizz: "buzz",
             pop: new Date(60000),
-            [DynamoDbTable]: "foo",
-            [DynamoDbSchema]: {
+            [DynamoDbTable.description]: "foo",
+            [DynamoDbSchema.description]: {
               fizz: {
                 type: "String",
                 attributeName: "foo",
@@ -2309,8 +2309,8 @@ describe("DataMapper", () => {
 
       const result = await mapper.get({
         fizz: "buzz",
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -2332,8 +2332,8 @@ describe("DataMapper", () => {
       await mapper.get({
         item: {
           fizz: "buzz",
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "foo",
@@ -2365,11 +2365,11 @@ describe("DataMapper", () => {
           this.fizz = fizz
         }
 
-        get [DynamoDbTable]() {
+        get [DynamoDbTable.description]() {
           return "foo"
         }
 
-        get [DynamoDbSchema]() {
+        get [DynamoDbSchema.description]() {
           return {
             fizz: {
               type: "String",
@@ -2416,10 +2416,10 @@ describe("DataMapper", () => {
     class ScannableItem {
       foo!: string
 
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return "foo"
       }
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return {
           foo: {
             type: "String",
@@ -2659,7 +2659,7 @@ describe("DataMapper", () => {
     it("should throw if the item does not provide a schema per the data mapper protocol", async () => {
       await expect(
         mapper.put({
-          [DynamoDbTable]: "foo"
+          [DynamoDbTable.description]: "foo"
         })
       ).rejects.toMatchObject(
         new Error(
@@ -2671,7 +2671,7 @@ describe("DataMapper", () => {
     it("should throw if the item does not provide a table name per the data mapper protocol", async () => {
       await expect(
         mapper.put({
-          [DynamoDbSchema]: {}
+          [DynamoDbSchema.description]: {}
         })
       ).rejects.toMatchObject(
         new Error(
@@ -2683,8 +2683,8 @@ describe("DataMapper", () => {
     it("should use the table name specified in the supplied table definition", async () => {
       const tableName = "foo"
       await mapper.put({
-        [DynamoDbTable]: tableName,
-        [DynamoDbSchema]: {}
+        [DynamoDbTable.description]: tableName,
+        [DynamoDbSchema.description]: {}
       })
 
       expect((mockDynamoDbClient.putItem.mock.calls[0] as any)[0]).toMatchObject({ TableName: tableName })
@@ -2698,8 +2698,8 @@ describe("DataMapper", () => {
       })
       const tableName = "foo"
       await mapper.put({
-        [DynamoDbTable]: tableName,
-        [DynamoDbSchema]: {}
+        [DynamoDbTable.description]: tableName,
+        [DynamoDbSchema.description]: {}
       })
 
       expect((mockDynamoDbClient.putItem.mock.calls[0] as any)[0]).toMatchObject({
@@ -2712,8 +2712,8 @@ describe("DataMapper", () => {
         fizz: "buzz",
         pop: new Date(60000),
         snap: false,
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: { type: "String" },
           pop: { type: "Date" },
           snap: {
@@ -2736,8 +2736,8 @@ describe("DataMapper", () => {
       await mapper.put({
         fizz: "buzz",
         pop: 21,
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -2764,8 +2764,8 @@ describe("DataMapper", () => {
     it("should include a condition expression requiring that no versioned item be present when the schema contains a version attribute but the value is undefined", async () => {
       await mapper.put({
         fizz: "buzz",
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -2794,8 +2794,8 @@ describe("DataMapper", () => {
         {
           fizz: "buzz",
           pop: 21,
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "foo",
@@ -2821,8 +2821,8 @@ describe("DataMapper", () => {
       await mapper.put({
         fizz: "buzz",
         pop: 21,
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           fizz: {
             type: "String",
             attributeName: "foo",
@@ -2843,8 +2843,8 @@ describe("DataMapper", () => {
         {
           fizz: "buzz",
           pop: 21,
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "foo",
@@ -2883,8 +2883,8 @@ describe("DataMapper", () => {
       promiseFunc.mockImplementation(() => Promise.resolve({} as PutItemOutput))
 
       const result = await mapper.put({
-        [DynamoDbTable]: "foo",
-        [DynamoDbSchema]: {
+        [DynamoDbTable.description]: "foo",
+        [DynamoDbSchema.description]: {
           foo: {
             type: "String",
             attributeName: "fizz",
@@ -2908,8 +2908,8 @@ describe("DataMapper", () => {
       await mapper.put({
         item: {
           fizz: "buzz",
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             fizz: {
               type: "String",
               attributeName: "foo",
@@ -2928,11 +2928,11 @@ describe("DataMapper", () => {
       promiseFunc.mockImplementation(() => Promise.resolve({}))
 
       class Item {
-        get [DynamoDbTable]() {
+        get [DynamoDbTable.description]() {
           return "foo"
         }
 
-        get [DynamoDbSchema]() {
+        get [DynamoDbSchema.description]() {
           return {
             foo: {
               type: "String",
@@ -2980,10 +2980,10 @@ describe("DataMapper", () => {
       snap!: string
       fizz?: Array<string>
 
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return "foo"
       }
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return {
           snap: {
             type: "String",
@@ -3008,7 +3008,7 @@ describe("DataMapper", () => {
       expect(() =>
         mapper.query(
           class {
-            get [DynamoDbTable]() {
+            get [DynamoDbTable.description]() {
               return "foo"
             }
           },
@@ -3023,7 +3023,7 @@ describe("DataMapper", () => {
       expect(() =>
         mapper.query(
           class {
-            get [DynamoDbSchema]() {
+            get [DynamoDbSchema.description]() {
               return {}
             }
           },
@@ -3074,10 +3074,10 @@ describe("DataMapper", () => {
       promiseFunc.mockImplementationOnce(() => Promise.resolve({}))
 
       class QueryableItem {
-        get [DynamoDbTable]() {
+        get [DynamoDbTable.description]() {
           return "foo"
         }
-        get [DynamoDbSchema]() {
+        get [DynamoDbSchema.description]() {
           return {
             foo: {
               type: "String",
@@ -3135,10 +3135,10 @@ describe("DataMapper", () => {
     it("should allow a condition expression as the keyCondition", async () => {
       const results = mapper.query(
         class {
-          get [DynamoDbTable]() {
+          get [DynamoDbTable.description]() {
             return "foo"
           }
-          get [DynamoDbSchema]() {
+          get [DynamoDbSchema.description]() {
             return {
               snap: {
                 type: "String",
@@ -3249,10 +3249,10 @@ describe("DataMapper", () => {
     it("should allow a start key", async () => {
       const results = mapper.query(
         class {
-          get [DynamoDbTable]() {
+          get [DynamoDbTable.description]() {
             return "foo"
           }
-          get [DynamoDbSchema]() {
+          get [DynamoDbSchema.description]() {
             return {
               snap: {
                 type: "String",
@@ -3431,10 +3431,10 @@ describe("DataMapper", () => {
           this.snap = key
         }
 
-        get [DynamoDbTable]() {
+        get [DynamoDbTable.description]() {
           return "table"
         }
-        get [DynamoDbSchema]() {
+        get [DynamoDbSchema.description]() {
           return {
             snap: {
               type: "String",
@@ -3494,10 +3494,10 @@ describe("DataMapper", () => {
       snap!: string
       fizz?: Array<string>
 
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return "foo"
       }
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return {
           snap: {
             type: "String",
@@ -3522,7 +3522,7 @@ describe("DataMapper", () => {
       expect(() =>
         mapper.scan(
           class {
-            get [DynamoDbTable]() {
+            get [DynamoDbTable.description]() {
               return "foo"
             }
           }
@@ -3536,7 +3536,7 @@ describe("DataMapper", () => {
       expect(() =>
         mapper.scan(
           class {
-            get [DynamoDbSchema]() {
+            get [DynamoDbSchema.description]() {
               return {}
             }
           }
@@ -3586,10 +3586,10 @@ describe("DataMapper", () => {
       promiseFunc.mockImplementationOnce(() => Promise.resolve({}))
 
       class ScannableItem {
-        get [DynamoDbTable]() {
+        get [DynamoDbTable.description]() {
           return "foo"
         }
-        get [DynamoDbSchema]() {
+        get [DynamoDbSchema.description]() {
           return {
             foo: {
               type: "String",
@@ -3687,10 +3687,10 @@ describe("DataMapper", () => {
     it("should allow a start key", async () => {
       const results = mapper.scan(
         class {
-          get [DynamoDbTable]() {
+          get [DynamoDbTable.description]() {
             return "foo"
           }
-          get [DynamoDbSchema]() {
+          get [DynamoDbSchema.description]() {
             return {
               snap: {
                 type: "String",
@@ -3825,10 +3825,10 @@ describe("DataMapper", () => {
           this.snap = key
         }
 
-        get [DynamoDbTable]() {
+        get [DynamoDbTable.description]() {
           return "table"
         }
-        get [DynamoDbSchema]() {
+        get [DynamoDbSchema.description]() {
           return {
             snap: {
               type: "String",
@@ -3868,11 +3868,11 @@ describe("DataMapper", () => {
     const tableName = "foo"
 
     class EmptyItem {
-      get [DynamoDbTable]() {
+      get [DynamoDbTable.description]() {
         return tableName
       }
 
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return {}
       }
     }
@@ -3886,7 +3886,7 @@ describe("DataMapper", () => {
         pop: { [key: string]: any }
       }
 
-      get [DynamoDbSchema]() {
+      get [DynamoDbSchema.description]() {
         return {
           foo: {
             type: "String",
@@ -3931,7 +3931,7 @@ describe("DataMapper", () => {
       it("should throw if the item does not provide a schema per the data mapper protocol", async () => {
         await expect(
           mapper.update({
-            [DynamoDbTable]: "foo"
+            [DynamoDbTable.description]: "foo"
           })
         ).rejects.toMatchObject(
           new Error(
@@ -3943,7 +3943,7 @@ describe("DataMapper", () => {
       it("should throw if the item does not provide a table name per the data mapper protocol", async () => {
         await expect(
           mapper.update({
-            [DynamoDbSchema]: {}
+            [DynamoDbSchema.description]: {}
           })
         ).rejects.toMatchObject(
           new Error(
@@ -4032,8 +4032,8 @@ describe("DataMapper", () => {
 
         const result = await mapper.update({
           foo: "buzz",
-          [DynamoDbTable]: "foo",
-          [DynamoDbSchema]: {
+          [DynamoDbTable.description]: "foo",
+          [DynamoDbSchema.description]: {
             foo: {
               type: "String",
               attributeName: "fizz",
@@ -4063,8 +4063,8 @@ describe("DataMapper", () => {
         return expect(
           mapper.update({
             foo: "buzz",
-            [DynamoDbTable]: "foo",
-            [DynamoDbSchema]: {
+            [DynamoDbTable.description]: "foo",
+            [DynamoDbSchema.description]: {
               foo: {
                 type: "String",
                 attributeName: "fizz",
@@ -4091,11 +4091,11 @@ describe("DataMapper", () => {
           bar?: [number, Uint8Array]
           baz?: number
 
-          get [DynamoDbTable]() {
+          get [DynamoDbTable.description]() {
             return "table"
           }
 
-          get [DynamoDbSchema]() {
+          get [DynamoDbSchema.description]() {
             return {
               foo: {
                 type: "String",
@@ -4233,8 +4233,8 @@ describe("DataMapper", () => {
         await mapper.update({
           item: {
             fizz: "buzz",
-            [DynamoDbTable]: "foo",
-            [DynamoDbSchema]: {
+            [DynamoDbTable.description]: "foo",
+            [DynamoDbSchema.description]: {
               fizz: {
                 type: "String",
                 attributeName: "foo",

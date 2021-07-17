@@ -12,7 +12,7 @@ describe('attribute', () => {
             const target = Object.create(null);
             decorator(target, 'property');
 
-            expect(isSchema(target[DynamoDbSchema])).toBe(true);
+            expect(isSchema(target[DynamoDbSchema.description])).toBe(true);
         }
     );
 
@@ -28,7 +28,7 @@ describe('attribute', () => {
             decorator(target, 'property1');
             decorator(target, 'property2');
 
-            expect(target[DynamoDbSchema]).toEqual({
+            expect(target[DynamoDbSchema.description]).toEqual({
                 property1: expected,
                 property2: expected,
             });
@@ -78,13 +78,13 @@ describe('attribute', () => {
         }
 
         const bar = new Bar();
-        expect((bar as any)[DynamoDbSchema]).toEqual({
+        expect((bar as any)[DynamoDbSchema.description]).toEqual({
             prop: {type: 'String'},
             otherProp: {type: 'Number'},
         });
 
         const baz = new Baz();
-        expect((baz as any)[DynamoDbSchema]).toEqual({
+        expect((baz as any)[DynamoDbSchema.description]).toEqual({
             prop: {type: 'String'},
             yetAnotherProp: {type: 'Boolean'},
         });
@@ -107,17 +107,17 @@ describe('attribute', () => {
         }
 
         const foo = new Foo();
-        expect((foo as any)[DynamoDbSchema]).toEqual({
+        expect((foo as any)[DynamoDbSchema.description]).toEqual({
             prop: {type: 'String'},
         });
         const bar = new Bar();
-        expect((bar as any)[DynamoDbSchema]).toEqual({
+        expect((bar as any)[DynamoDbSchema.description]).toEqual({
             prop: {type: 'String'},
             otherProp: {type: 'Number'},
         });
 
         const baz = new Baz();
-        expect((baz as any)[DynamoDbSchema]).toEqual({
+        expect((baz as any)[DynamoDbSchema.description]).toEqual({
             prop: {type: 'String'},
             otherProp: {type: 'Number'},
             yetAnotherProp: {type: 'Boolean'},
@@ -159,7 +159,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'String'});
             }
         );
@@ -173,7 +173,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Number'});
             }
         );
@@ -187,7 +187,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Boolean'});
             }
         );
@@ -201,7 +201,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Date'});
             }
         );
@@ -216,7 +216,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Date'});
             }
         );
@@ -230,7 +230,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Set', memberType: 'Binary'});
             }
         );
@@ -245,7 +245,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Set', memberType: 'Binary'});
             }
         );
@@ -259,7 +259,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Set', memberType: 'Number'});
             }
         );
@@ -274,7 +274,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Set', memberType: 'Number'});
             }
         );
@@ -286,7 +286,7 @@ describe('attribute', () => {
             const target = Object.create(null);
             decorator(target, 'property');
 
-            expect(target[DynamoDbSchema].property)
+            expect(target[DynamoDbSchema.description].property)
                 .toEqual({type: 'Set', memberType: 'String'});
         });
 
@@ -300,7 +300,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Set', memberType: 'Number'});
             }
         );
@@ -327,7 +327,7 @@ describe('attribute', () => {
             const target = Object.create(null);
             decorator(target, 'property');
 
-            expect(target[DynamoDbSchema].property)
+            expect(target[DynamoDbSchema.description].property)
                 .toEqual({type: 'Map', memberType});
         });
 
@@ -348,7 +348,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property)
+                expect(target[DynamoDbSchema.description].property)
                     .toEqual({type: 'Map', memberType});
             }
         );
@@ -368,7 +368,7 @@ describe('attribute', () => {
             'should treat an object that adheres to the DynamoDbSchema protocol as a document',
             () => {
                 class Document {
-                    get [DynamoDbSchema]() {
+                    get [DynamoDbSchema.description]() {
                         return {};
                     }
                 }
@@ -378,7 +378,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property).toEqual({
+                expect(target[DynamoDbSchema.description].property).toEqual({
                     type: 'Document',
                     members: {},
                     valueConstructor: Document,
@@ -392,7 +392,7 @@ describe('attribute', () => {
             const target = Object.create(null);
             decorator(target, 'property');
 
-            expect(target[DynamoDbSchema].property).toEqual({
+            expect(target[DynamoDbSchema.description].property).toEqual({
                 type: 'Collection',
             });
         });
@@ -407,7 +407,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property).toEqual({
+                expect(target[DynamoDbSchema.description].property).toEqual({
                     type: 'List',
                     memberType,
                 });
@@ -427,7 +427,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property).toEqual({
+                expect(target[DynamoDbSchema.description].property).toEqual({
                     type: 'Tuple',
                     members,
                 });
@@ -443,7 +443,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property).toEqual({
+                expect(target[DynamoDbSchema.description].property).toEqual({
                     type: 'Collection',
                 });
             }
@@ -457,7 +457,7 @@ describe('attribute', () => {
                 const target = Object.create(null);
                 decorator(target, 'property');
 
-                expect(target[DynamoDbSchema].property).toEqual({type: 'Any'});
+                expect(target[DynamoDbSchema.description].property).toEqual({type: 'Any'});
             }
         );
     });

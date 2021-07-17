@@ -10,7 +10,7 @@ describe('table', () => {
             const decorator = Table(tableName);
             decorator(MyDocument);
 
-            expect((new MyDocument() as any)[DynamoDbTable]).toBe(tableName);
+            expect((new MyDocument() as any)[DynamoDbTable.description]).toBe(tableName);
         }
     );
 });

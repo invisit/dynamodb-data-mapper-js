@@ -1,4 +1,4 @@
-import {DynamoDbSchema} from "./protocols";
+import { DynamoDbSchema, getSchemaFuzzy } from "./protocols"
 import {
     DocumentType,
     ZeroArgumentsConstructor,
@@ -16,7 +16,7 @@ export function embed<T>(
 ): DocumentType {
     return {
         type: 'Document',
-        members: (documentConstructor.prototype as any)[DynamoDbSchema] || {},
+        members: getSchemaFuzzy(documentConstructor, {}),// || {},
         attributeName,
         defaultProvider,
         valueConstructor: documentConstructor

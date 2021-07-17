@@ -31,7 +31,7 @@ import {
   UpdateParameters
 } from "./namedParameters"
 import { ParallelScanIterator } from "./ParallelScanIterator"
-import { DynamoDbTable, getSchema, getTableName } from "./protocols"
+import { DynamoDbTable, getSchema, getSchemaFuzzy, getTableName } from "./protocols"
 import { QueryIterator } from "./QueryIterator"
 import { ScanIterator } from "./ScanIterator"
 import { BatchGet, BatchWrite, PerTableOptions, TableOptions, WriteRequest } from "@invisit/dynamodb-batch-iterator"
@@ -147,8 +147,11 @@ export function getTableResourceDef(
 export function getCFNTableResourceDef(
   valueConstructor: ZeroArgumentsConstructor<any>,
   options: CreateTableOptions = {},
-  TableName: string = valueConstructor?.prototype?.[DynamoDbTable],
-  schema: Schema = getSchema(valueConstructor.prototype),
+  TableName: string = valueConstructor?.prototype?.[DynamoDbTable.description],
+  schema: Schema = [valueConstructor,valueConstructor.prototype]
+    .map(o => getSchemaFuzzy(o))
+    .filter(Boolean)[0]
+  ,//(valueConstructor.prototype),
 
   keySchema: KeySchema = keysFromSchema(schema)
 ): DynamoTableResourceDef {
@@ -505,7 +508,7 @@ export class DataMapper {
     options: DeleteOptions = {}
   ): Promise<T | undefined> {
     let item: T
-    if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable]) {
+    if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable.description]) {
       item = (itemOrParameters as DeleteParameters<T>).item
       options = itemOrParameters as DeleteParameters<T>
     } else {
@@ -653,7 +656,7 @@ export class DataMapper {
     options: GetOptions = {}
   ): Promise<T | undefined> {
     let item: T
-    if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable]) {
+    if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable.description]) {
       item = (itemOrParameters as GetParameters<T>).item
       options = itemOrParameters as GetParameters<T>
     } else {
@@ -767,7 +770,7 @@ export class DataMapper {
     Ctor extends ZeroArgumentsConstructor<T> = ZeroArgumentsConstructor<T>
   >(itemOrParameters: Partial<T> | PutParameters<T>, options: PutOptions = {}): Promise<T> {
     let item: T
-    if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable]) {
+    if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable.description]) {
       item = (itemOrParameters as PutParameters<T>).item
       options = itemOrParameters as PutParameters<T>
     } else {
@@ -897,7 +900,7 @@ export class DataMapper {
     if (
       "valueConstructor" in ctorOrParams &&
       (ctorOrParams as ScanParameters<T>).valueConstructor.prototype &&
-      (ctorOrParams as any).valueConstructor.prototype[DynamoDbTable]
+      (ctorOrParams as any).valueConstructor.prototype[DynamoDbTable.description]
     ) {
       valueConstructor = (ctorOrParams as ScanParameters<T>).valueConstructor
       options = ctorOrParams as ScanParameters<T>
@@ -932,7 +935,7 @@ export class DataMapper {
     options: UpdateOptions = {}
   ): Promise<T> {
     let item: T
-    if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable]) {
+    if ("item" in itemOrParameters && (itemOrParameters as any).item[DynamoDbTable.description]) {
       item = (itemOrParameters as UpdateParameters<T>).item
       options = itemOrParameters as UpdateParameters<T>
     } else {
